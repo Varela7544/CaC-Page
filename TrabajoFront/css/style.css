@@ -16,7 +16,6 @@ h1{
 }
 
 #votebutton{
-    transition-duration: 0.1s;
     display: inline-block;
     background-color:mediumturquoise;
     border: none;
@@ -29,6 +28,7 @@ h1{
 }
 
 #votebutton:hover {
+    transition-duration: 0.1s;
     background-color: white;
     color:mediumturquoise;
     border: 2px solid mediumturquoise;
