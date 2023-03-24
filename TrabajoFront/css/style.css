@@ -10,25 +10,33 @@ h1{
     text-align: center;
 }
 
-.button {
+.buttondiv {
     text-align: center;
+   
 }
 
 #votebutton{
+    transition-duration: 0.1s;
+    display: inline-block;
     background-color:mediumturquoise;
     border: none;
     color: white;
     padding: 15px 32px;
-    text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 48px;
     font-weight: bold;
+    cursor:pointer
+}
+
+#votebutton:hover {
+    background-color: white;
+    color:mediumturquoise;
+    border: 2px solid mediumturquoise;
 }
 
 .enlaces{
     margin:15px;
-    padding: 15px 32px;
+    padding: 15px;
     background-color: mediumturquoise;
     color: white;
     text-align: center;
