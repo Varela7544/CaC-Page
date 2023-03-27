@@ -1,0 +1,112 @@
+* {
+    font-family: "Encode Sans",Arial,sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0px;
+}
+
+footer {
+    background-color: #37bbed;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    padding: 3em;
+}
+
+
+.image-footer {
+    text-align: center;
+}
+
+.image-footer h3 {
+    font-size: 1.8em;
+    color: white;
+    font-style: oblique;
+    font-weight: 800;
+}
+
+.informacion-footer{
+    display: flex;
+    justify-content: start;
+}
+
+.informacion-footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+.informacion-footer h3 {
+    color: rgb(29, 29, 29);
+}
+
+.informacion-footer a {
+    text-decoration: none;
+    color: rgb(65, 65, 65)
+}
+
+.informacion-footer li {
+    list-style: none;
+}
+
+.footer-contacto {
+    text-align: center;
+    width: 20em;
+}
+
+
+#nombre {
+    width: 18em;
+    border-radius: 17px;
+    background: rgba(0,0,0,0.05);
+    border: none;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#mail {
+    width: 18em;
+    border-radius: 17px;
+    background: rgba(0,0,0,0.05);
+    border: none;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#text-area{
+    width: 18em;
+    border-radius: 17px;
+    background: rgba(0,0,0,0.05);
+    border: none;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#submit{
+    width: 18em;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: none;
+    background: #0545a2;
+    color: white;
+    font-size: 1em;
+}
+
+
+
+.copyright {
+    text-align: center;
+    grid-area: "copyright-footer";
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin: 0;
+    color: rgb(65, 65, 65);
+}
