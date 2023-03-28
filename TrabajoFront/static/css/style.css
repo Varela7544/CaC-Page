@@ -1,61 +1,49 @@
 * {
     font-family: "Encode Sans",Arial,sans-serif;
+    box-sizing: border-box;
 }
 
 body {
-    margin: 0;
+    margin: 0px;
     padding: 0px;
 }
 
 footer {
     background-color: #37bbed;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    align-items: center;
-    padding: 3em;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }
 
+@media (max-width: 700px) {
+    footer {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 
 .image-footer {
     text-align: center;
+    justify-content: center;
+    margin: auto 0 0 0;
 }
 
 .image-footer h3 {
-    font-size: 1.8em;
+    font-size: 3em;
     color: white;
     font-style: oblique;
     font-weight: 800;
 }
 
-.informacion-footer{
-    display: flex;
-    justify-content: start;
-}
-
-.informacion-footer ul {
-    margin: 0;
-    padding: 0;
-}
-
-.informacion-footer h3 {
-    color: rgb(29, 29, 29);
-}
-
-.informacion-footer a {
-    text-decoration: none;
-    color: rgb(65, 65, 65)
-}
-
-.informacion-footer li {
-    list-style: none;
-}
-
 .footer-contacto {
-    text-align: center;
+    justify-content: center;
     width: 20em;
 }
 
+input::placeholder, textarea::placeholder {
+    color: rgb(236, 236, 236);
+}
 
 #nombre {
     width: 18em;
@@ -66,6 +54,7 @@ footer {
     padding-left: 10px;
     padding-top: 3px;
     padding-bottom: 3px;
+    color: white;
 }
 
 #mail {
@@ -86,12 +75,13 @@ footer {
     border: none;
     font-size: 17px;
     padding-left: 10px;
-    padding-top: 3px;
+    padding-top: 7px;
     padding-bottom: 3px;
 }
 
 #submit{
-    width: 18em;
+    width: 19.5em;
+    height: 2em;
     margin: 20px auto;
     border-radius: 10px;
     border: none;
