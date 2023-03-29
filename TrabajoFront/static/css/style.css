@@ -7,6 +7,7 @@ body {
     padding: 0px;
 }
 
+
 /*COMIENZO DE ESTILOS DEL HEADER*/
 
 nav {
@@ -78,6 +79,17 @@ nav h3 {
   }
 
 /*COMIENZO DE ESTILOS DEL FOOTER*/
+
+h1{
+    
+    padding: 5%;
+    margin: 1px;
+    color: black;
+    justify-content: center ;
+    background-color: #37bbed;
+    display: flex
+    
+}
 
 footer {
     background-color: #37bbed;
