@@ -23,8 +23,7 @@ nav {
     margin-right: 0.5em;
 }
 
-.image-footer h3 {
-    font-size: 2em;
+nav h3 {
     color: white;
     font-style: oblique;
     font-weight: 800;
