@@ -5,23 +5,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Sitio de Votación</title>
+    <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/css/style.css">
+    
+    <title>Sitio para Verificar Identidad</title>
     <!--
-        El formulario usa el mismo .css que el index.html, esto se puede cambiar más adelante
+        para el formulario cambie el css y el sitio de votacion usa el mismo css que el formulario, porque me pareció buena idea poner el logo del pie de pagina a todos, y no me funcionaba con el otro css
     -->
 </head>
 
 <body>
     <div>
         <header>
-            <h1>Elegí tu candidato</h1>
+            <h1>Verificar Identidad</h1>
         </header>
     </div>
+    <br>
     <nav>
         <a class="enlaces" href="../index.html">HOME</a>
     </nav>
+
+    <form action="GET">
+        <p>
+            Apellido:
+            <input type="text" name="Apellido" id="apellido">
+        </p>
+
+        <p>
+            Nombre:
+            <input type="text" name="Nombre" id="Nombre">
+        </p>
+
+        <p>
+            DNI N°:
+            <input type="number" name="DNI" id="dni">
+        </p>
+
+        <p>
+            Numero de Tramite:
+            <input type="number" name="Numerodetramite" id="numerodetramite">
+        </p>
+
+        <p>
+            Fecha de Nacimiento: <input type="date" name="Fechadenac" id="fechadenac">
+        </p>
+
+        <input type="submit" value="Enviar" id="submit">
+    </form>
+    <br>
+
+    <div>
+        <nav><a class="enlaces" href="./candidatos.html"> Paso siguiente</a></nav>
+    </div>
+
+    <br><br>
+    <footer>
+        <div class="image-footer">
+            <img src="../static/img/favicon-96x96.png" alt="logo-vot.ar">
+            <h3>VOT.AR</h3>
+        </div>
+    </footer>
 </body>
 
 </html>
