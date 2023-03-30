@@ -181,10 +181,27 @@ input::placeholder, textarea::placeholder {
 
 /*COMIENZO DE ESTILOS DEL FORM*/
 
-#Nombre {
+#bodyform {
+    background-color: #37bbed;
+}
+
+#h1form{
+    
+    padding: 5%;
+    margin: 1px;
+    color: white;
+    justify-content: center ;
+    background-color: #37bbed;
+    display: flex
+    
+}
+
+#Apellido {
+    
+    color: black;
     width: 18em;
     border-radius: 17px;
-    background:#37bbed;
+    background:rgba(0,0,0,0.05);
     border: none;
     font-size: 17px;
     padding-left: 10px;
@@ -192,10 +209,10 @@ input::placeholder, textarea::placeholder {
     padding-bottom: 3px;
 }
 
-#Apellido {
+#Nombre {
     width: 18em;
     border-radius: 17px;
-    background:#37bbed;
+    background:rgba(0,0,0,0.05);
     border: none;
     font-size: 17px;
     padding-left: 10px;
@@ -206,7 +223,7 @@ input::placeholder, textarea::placeholder {
 #dni {
     width: 18em;
     border-radius: 17px;
-    background:#37bbed;
+    background:rgba(0,0,0,0.05);
     border: none;
     font-size: 17px;
     padding-left: 10px;
@@ -217,7 +234,7 @@ input::placeholder, textarea::placeholder {
 #numerodetramite {
     width: 18em;
     border-radius: 17px;
-    background:#37bbed;
+    background:rgba(0,0,0,0.05);
     border: none;
     font-size: 17px;
     padding-left: 10px;
@@ -226,9 +243,10 @@ input::placeholder, textarea::placeholder {
 }
 
 #fechadenac {
+    
     width: 18em;
     border-radius: 17px;
-    background:#37bbed;
+    background:rgba(0,0,0,0.05);
     border: none;
     font-size: 17px;
     padding-left: 10px;
@@ -259,5 +277,16 @@ input::placeholder, textarea::placeholder {
     background: rgb(100, 200, 255);
     cursor: pointer;
   }
+
+  #navcandidatos {
+    justify-content: right;
+    display: flex;
+    background-color: #37bbed;
+    color: white;
+    flex-wrap: wrap;
+    padding-left: 20%;
+}
+
+
 
 /*FIN DE ESTILOS DEL FORM*/
