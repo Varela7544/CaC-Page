@@ -178,3 +178,86 @@ input::placeholder, textarea::placeholder {
 }
 
 /*FIN DE ESTILOS DEL FOOTER*/
+
+/*COMIENZO DE ESTILOS DEL FORM*/
+
+#Nombre {
+    width: 18em;
+    border-radius: 17px;
+    background:#37bbed;
+    border: none;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#Apellido {
+    width: 18em;
+    border-radius: 17px;
+    background:#37bbed;
+    border: none;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#dni {
+    width: 18em;
+    border-radius: 17px;
+    background:#37bbed;
+    border: none;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#numerodetramite {
+    width: 18em;
+    border-radius: 17px;
+    background:#37bbed;
+    border: none;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#fechadenac {
+    width: 18em;
+    border-radius: 17px;
+    background:#37bbed;
+    border: none;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color:whitesmoke
+}
+
+.form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form input {
+    width: 90%;
+    height: 30px;
+    margin: 0.5rem;
+  }
+  
+  .form button {
+    padding: 0.5em 1em;
+    border: none;
+    background: rgb(100, 200, 255);
+    cursor: pointer;
+  }
+
+/*FIN DE ESTILOS DEL FORM*/

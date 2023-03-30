@@ -25,33 +25,28 @@
         <a class="enlaces" href="../index.html">HOME</a>
     </nav>
 
-    <form action="GET">
-        <p>
-            Apellido:
-            <input type="text" name="Apellido" id="apellido">
-        </p>
-
-        <p>
-            Nombre:
-            <input type="text" name="Nombre" id="Nombre">
-        </p>
-
-        <p>
-            DNI N°:
-            <input type="number" name="DNI" id="dni">
-        </p>
-
-        <p>
-            Numero de Tramite:
-            <input type="number" name="Numerodetramite" id="numerodetramite">
-        </p>
-
-        <p>
-            Fecha de Nacimiento: <input type="date" name="Fechadenac" id="fechadenac">
-        </p>
-
-        <input type="submit" value="Enviar" id="submit">
-    </form>
+    <div class="form">
+        <form action="GET">
+            <p>
+                <input type="text" placeholder="Apellido:" required id="Apellido">
+            </p>
+            <p>
+                <input type="text" placeholder="Nombre:" required id="Nombre">
+            </p>
+            <p>
+                <input type="number" placeholder="DNI:" required id="dni">
+            </p>
+            <p>
+                <input type="number" placeholder="Número de tramite:" required id="numerodetramite">
+            </p>
+            <p>
+                Fecha de Nacimiento
+                <br>
+                <input type="date" name="fechadenac" required id="fechadenac">
+            </p>
+            <input type="submit" value="Enviar" id="submit">
+        </form>
+    </div>
     <br>
 
     <div>
