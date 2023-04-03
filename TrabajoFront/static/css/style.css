@@ -94,6 +94,8 @@ h1{
 footer {
     background-color: #37bbed;
     padding: 1em;
+    text-align: center;
+    justify-content: center;
 }
 
 .footer-contacto-logo {
