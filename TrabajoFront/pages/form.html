@@ -9,18 +9,15 @@
     <link rel="stylesheet" href="../static/css/style.css">
     
     <title>Sitio para Verificar Identidad</title>
-    <!--
-        para el formulario cambie el css y el sitio de votacion usa el mismo css que el formulario, porque me pareció buena idea poner el logo del pie de pagina a todos, y no me funcionaba con el otro css
-    -->
+    
 </head>
 
-<body>
+<body id="bodyform">
     <div>
         <header>
-            <h1>Verificar Identidad</h1>
+            <h1 id="h1form">Verificar Identidad</h1>
         </header>
     </div>
-    <br>
     <nav>
         <a class="enlaces" href="../index.html">HOME</a>
     </nav>
@@ -40,9 +37,8 @@
                 <input type="number" placeholder="Número de tramite:" required id="numerodetramite">
             </p>
             <p>
-                Fecha de Nacimiento
-                <br>
-                <input type="date" name="fechadenac" required id="fechadenac">
+                <div style="color: white;">Fecha de nacimiento: </div>
+                <input type="date" name="fechadenac" required id="fechadenac"  >
             </p>
             <input type="submit" value="Enviar" id="submit">
         </form>
@@ -50,7 +46,7 @@
     <br>
 
     <div>
-        <nav><a class="enlaces" href="./candidatos.html"> Paso siguiente</a></nav>
+        <nav ><a class="enlaces" href="./candidatos.html" id="navcandidatos"> Paso siguiente</a></nav>
     </div>
 
     <br><br>
@@ -59,6 +55,11 @@
             <img src="../static/img/favicon-96x96.png" alt="logo-vot.ar">
             <h3>VOT.AR</h3>
         </div>
+        <p>
+            <a href="https://www.facebook.com/GCBA/?locale=es_LA" target="_blank"> <img src="../static/img/facebook-circle-logo-24.png" alt="facebook" width="40" height="40"></a>
+            <a href="https://www.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires/" target="_blank"> <img src="../static/img/linkedin-square-logo-24.png" alt="linkedin" width="40" height="40"></a>
+            <a href="https://twitter.com/gcba" target="_blank"><img src="../static/img/twitter-logo-24.png" alt="twitter" width="40" height="40"></a>
+        </p>
     </footer>
 </body>
 
