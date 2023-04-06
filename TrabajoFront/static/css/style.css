@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,700;0,800;0,900;1,200;1,700;1,800;1,900&display=swap');
+
 * {
-    font-family: "Encode Sans",Arial,sans-serif;
+    font-family: 'Poppins', sans-serif;;
 }
 
 body {
@@ -198,8 +200,6 @@ h1{
 footer {
     background-color: #37bbed;
     padding: 1em;
-    text-align: center;
-    justify-content: center;
 }
 
 .footer-contacto-logo {
@@ -281,6 +281,88 @@ input::placeholder, textarea::placeholder {
     background: #0545a2;
     color: white;
     font-size: 1em;
+}
+
+
+.footer-sin-form {
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 40px;
+}
+
+.image-footer-sin-form p{
+    font-size: 1rem;
+}
+.image-footer-sin-form h3,
+.info-nuestra h3,
+.direccion h3
+{
+    font-size: 1.5rem;
+    position: relative;      
+}
+
+.image-footer-sin-form h3::before,
+.info-nuestra h3::before,
+.direccion h3::before
+ {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: black;
+}
+
+.image-footer-sin-form li {
+    list-style: none;
+    display: inline-block;
+}
+
+.info-nuestra {
+    margin-left: 3rem;
+}
+
+.info-nuestra ul,
+.direccion ul
+{
+    margin-block-start: 0;
+    padding-inline-start: 0px;
+}
+.info-nuestra li,
+.direccion li
+{
+    list-style: none;
+    margin-bottom: 1.3rem;
+}
+
+.info-nuestra li a,
+.direccion li a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+@media (max-width:810px) {
+    .footer-sin-form {
+        grid-template-columns: 2fr;
+    }
+    .info-nuestra {
+        margin-left: 0;
+    }
+    
+}
+
+@media (max-width:900px) {
+    .info-nuestra {
+        margin-left: 0;
+    }
+    .footer-sin-form {
+        width: 90%;
+    }
 }
 
 /*FIN DE ESTILOS DEL FOOTER*/
