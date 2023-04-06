@@ -10,6 +10,11 @@ body {
 
 /*COMIENZO DE ESTILOS DEL HEADER*/
 
+header {
+    position: fixed;
+    width: 100%;
+}
+
 nav {
     display: flex;
     background-color: #37bbed;
@@ -43,7 +48,7 @@ nav h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 250px;
+    height: 350px;
 }
 
 .background-section h2 {
@@ -77,6 +82,105 @@ nav h3 {
         font-size: 0.9em;
     }
   }
+
+.votacion-2023-informacion {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.votacion-2023-parrafo p {
+    margin-bottom: 1.5rem;
+}
+
+.preparacion-votacion {
+    margin-top: 4rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.preparacion-votacion h3 {
+    font-size: 3rem;
+}
+
+#boton-pre-votacion{
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+#boton-pre-votacion a{
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+    border: 1px solid #37bbed;
+    border-radius: 10%;
+    font-size: 1rem;
+    background-color: #37bbed;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+#boton-pre-votacion a:hover {
+    background-color: white;
+    color: black;
+}
+
+.fecha-votaciones {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.fecha-votaciones > div{
+    text-align: center;
+}
+
+.card-fecha-1 {
+    width: 30%;
+}
+
+.card-fecha-1 i {
+    font-size: 5rem;
+}
+
+.card-fecha-1 h4, .card-fecha-2 h4 {
+    font-size: 1.5rem;
+}
+
+.card-fecha-1 p, .card-fecha-2 p{
+    font-size: 1rem;
+}
+
+.card-fecha-2 {
+    width: 30%;
+}
+
+.card-fecha-2 i {
+    font-size: 5rem;
+}
+
+@media (max-width:900px) {
+    .card-fecha-1 {
+        margin-right: 10rem;
+    }
+}
+
+@media (max-width:900px) {
+    .fecha-votaciones {
+        flex-direction: column;
+    }
+    .card-fecha-1 {
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+}
 
 /*COMIENZO DE ESTILOS DEL FOOTER*/
 
