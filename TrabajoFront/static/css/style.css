@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,700;0,800;0,900;1,200;1,700;1,800;1,900&display=swap');
+
 * {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
@@ -11,6 +13,13 @@ body {
 
 
 /*COMIENZO DE ESTILOS DEL HEADER*/
+
+header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    
+}
 
 nav {
     display: flex;
@@ -47,7 +56,7 @@ nav h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 250px;
+    height: 350px;
 }
 
 .background-section h2 {
@@ -84,8 +93,40 @@ nav h3 {
     }
 }
 
-/*COMIENZO DE ESTILOS DEL FOOTER*/
+.votacion-2023-informacion {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
 
+.votacion-2023-parrafo p {
+    margin-bottom: 1.5rem;
+}
+
+.preparacion-votacion {
+    margin-top: 4rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.preparacion-votacion h3 {
+    font-size: 3rem;
+}
+
+#boton-pre-votacion{
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+#boton-pre-votacion a{
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+    border: 1px solid #37bbed;
+    border-radius: 10%;
+    font-size: 1rem;
 h1 {
 
     padding: 5%;
@@ -93,14 +134,143 @@ h1 {
     color: black;
     justify-content: center;
     background-color: #37bbed;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+#boton-pre-votacion a:hover {
+    background-color: white;
+    color: black;
+}
+
+.fecha-votaciones {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.fecha-votaciones > div{
+    text-align: center;
+}
+
+.card-fecha-1 {
+    width: 30%;
+}
+
+.card-fecha-1 i {
+    font-size: 5rem;
+}
+
+.card-fecha-1 h4, .card-fecha-2 h4 {
+    font-size: 1.5rem;
+}
+
+.card-fecha-1 p, .card-fecha-2 p{
+    font-size: 1rem;
+}
+
+.card-fecha-2 {
+    width: 30%;
+}
+
+.card-fecha-2 i {
+    font-size: 5rem;
+}
+
+@media (max-width:950px) {
+    .fecha-votaciones {
+        width: auto;
+    }
+}
+
+@media (max-width:900px) {
+    .fecha-votaciones {
+        flex-direction: column;
+    }
+    .card-fecha-1 {
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+}
+
+
+.background-section-candidatos {
+    background-color: #333;
+    background-position: center center;
+    background-size: cover;
+    padding: 0;
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 50px;
+}
+
+.background-section-candidatos h3 {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 100;
+    margin-left: 13rem;
+}
+
+#main-postulantes {
+    text-align: center;
+}
+.informacion-postulantes{
+    margin-top: 4rem;
+}
+
+.cards-postulantes {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+    margin-top: 4rem;
+    width: 80%;
+}
+
+.cards-postulantes > div {
+    border-radius: 1em;
+    padding: 10%;
+    font-size: 1.5em;
+    box-shadow: 0 0 2em -1em black;
+    width: 60%;
+}
+
+.cards-postulantes > div:hover {
+    transform: translate(-30px,-30px);
+    -webkit-transform: translate(-30px,-30px);
+    -moz-transform: translate(-30px,-30px);
+    transition: all 1s;
+}
+
+
+.cards-postulantes a{
+    text-decoration: none;
+    color: black;
+}
+
+.presidente-1 img,
+.presidente-2 img,
+.presidente-3 img,
+.presidente-4 img,
+.presidente-5 img{
+    width: 50%;
+    border-radius: 5%;
     display: flex
 }
+
+/*COMIENZO DE ESTILOS DEL FOOTER*/
 
 footer {
     background-color: #37bbed;
     padding: 1em;
-    text-align: center;
-    justify-content: center;
 }
 
 .footer-contacto-logo {
@@ -183,6 +353,88 @@ textarea::placeholder {
     background: #0545a2;
     color: white;
     font-size: 1em;
+}
+
+
+.footer-sin-form {
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 40px;
+}
+
+.image-footer-sin-form p{
+    font-size: 1rem;
+}
+.image-footer-sin-form h3,
+.info-nuestra h3,
+.direccion h3
+{
+    font-size: 1.5rem;
+    position: relative;      
+}
+
+.image-footer-sin-form h3::before,
+.info-nuestra h3::before,
+.direccion h3::before
+ {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: black;
+}
+
+.image-footer-sin-form li {
+    list-style: none;
+    display: inline-block;
+}
+
+.info-nuestra {
+    margin-left: 3rem;
+}
+
+.info-nuestra ul,
+.direccion ul
+{
+    margin-block-start: 0;
+    padding-inline-start: 0px;
+}
+.info-nuestra li,
+.direccion li
+{
+    list-style: none;
+    margin-bottom: 1.3rem;
+}
+
+.info-nuestra li a,
+.direccion li a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+@media (max-width:810px) {
+    .footer-sin-form {
+        grid-template-columns: 2fr;
+    }
+    .info-nuestra {
+        margin-left: 0;
+    }
+    
+}
+
+@media (max-width:900px) {
+    .info-nuestra {
+        margin-left: 0;
+    }
+    .footer-sin-for {
+        width: 90%;
+    }
 }
 
 /*FIN DE ESTILOS DEL FOOTER*/

@@ -7,44 +7,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon">
-    <title>Sitio de Votación</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css" integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/regular.min.css" integrity="sha512-WidMaWaNmZqjk3gDE6KBFCoDpBz9stTsTZZTeocfq/eDNkLfpakEd7qR0bPejvy/x0iT0dvzIq4IirnBtVer5A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Candidatos - VOT.AR</title>
 </head>
 
 <body>
 
-    <div>
-        <header>
-            <h1>Elegir Candidatos</h1>
-        </header>
-    </div>
-    <br>
-    <div>
+    <!--BARRA DE NAVEGACION HEADER-->
+    <header>
         <nav>
-            <a class="enlaces" href="../index.html">HOME</a>
-            <br><br>
-            <a class="enlaces" href="./form.html"> Paso anterior</a>
-
+            <div class="logo-header">
+                <a href="../index.html"><img src="../static/img/favicon-32x32.png" alt=""></a>
+            </div>
+            <div class="vot-ar-header">
+                <h3>
+                    VOT.AR
+                </h3>
+            </div>
         </nav>
-    </div>
+    </header>
+    
+    <main id="main-postulantes">
+        <section class="background-section-candidatos">
+            <div class="candidatos-header">
+                <h3>
+                    Elecciones Generales 2023
+                </h3>
+            </div>
+        </section>
 
-    <div>
-        <br><br>
-        Aca van los candidatos como un formulario supongo
-        <br><br>
+        <section class="informacion-postulantes">
+            <div class="tpinfo">
+                <h1>SISTEMA DE VOTACIÓN</h1>
+                <p>Debe selecciónar al <strong>Presidente/a</strong> y al <strong>Vicepresindente/a</strong></p>
+            </div>
+        </section>
 
-        <input type="submit" value="Finalizar votación">
-    </div>
-    <br>
+        <section class="cards-postulantes">
+            <div class="presidente-1">
+                <a href="#">
+                    <img src="../static/img/macri_presidente_1.jpg" alt="macri_presidente_1">
+                    <h4>Mauricio Macri | Miguel Angel Picheto</h4>
+                </a>
+            </div>
+            <div class="presidente-2">
+                <a href="#">
+                    <img src="../static/img/alberto_presidente_2.jpg" alt="macri_presidente_1">
+                    <h4>Alberto Fernandez | Cristina Fernandez</h4>
+                </a>
+            </div>
+            <div class="presidente-3">
+                <a href="#">
+                    <img src="../static/img/lavagna_presidente_3.jpg" alt="macri_presidente_1">
+                    <h4>Roberto Lavagna | Juan Urtubey</h4>
+                </a>
+            </div>
+            <div class="presidente-4">
+                <a href="#">
+                    <img src="../static/img/delcaño_presidente_4.jpg" alt="macri_presidente_1">
+                    <h4>Nicolas Del Caño | Romina Del Pla</h4>
+                </a>
+            </div>
+            <div class="presidente-5">
+                <a href="#">
+                    <img src="../static/img/espert_presidente_5.jpg" alt="macri_presidente_1">
+                    <h4>Jose Espert | Luis Rosales</h4>
+                </a>
+            </div>
+            
+        </section>
+    </main>
+    <br><br><br><br><br><br><br>
+    <!--FOOTER CON FORMULARIO-->
     <footer>
-        <div class="image-footer">
-            <img src="../static/img/favicon-96x96.png" alt="logo-vot.ar">
-            <h3>VOT.AR</h3>
+        <div class="footer-sin-form">
+            <div class="image-footer-sin-form">
+                <h3>SOBRE NOSOTROS</h3>
+                <p>Somos una compañania dedicada a la solución de problemas mediante software. En este caso, desarrollamos VOT.AR, que cuenta con las ultimas tecnologias para una eficas votación para toda nuesta Argentina.</p>
+                <p>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook fa-2xl" style="color: #0545a2;"></i></a>
+                    <a href="https://www.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"style="color: #0545a2;"></i></a>
+                    <a href="https://twitter.com/gcba" target="_blank"><i class="fa-brands fa-square-twitter fa-2xl" style="color: #0545a2;"></i></a>
+                </p>
+                
+            </div>
+
+            <div class="info-nuestra">
+                <h3>NAVEGACIÓN</h3>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/form.html">Tus datos</a></li>
+                    <li><a href="../pages/consultas.html">FAQ</a></li>
+                    <li><a href="#">Terminos y Condiciones</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="direccion">
+                <h3>CONTACTANOS</h3>
+                <ul>
+                    <li>
+                        <span><i class="fa-solid fa-map-pin" style="color: #0545a2;"></i></span>
+                        <span>Gascón 352 - CABA</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-phone" style="color: #0545a2;"></i></i></i></span>
+                        <span>Teléfono: (+54) 11 3343 - 5210</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-envelope" style="color: #0545a2;"></i></i></span>
+                        <span>Correo electrónico: elecciones@elecciones.gob.ar</span>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <p>
-            <a href="https://www.facebook.com/GCBA/?locale=es_LA" target="_blank"> <img src="../static/img/facebook-circle-logo-24.png" alt="facebook" width="40" height="40"></a>
-            <a href="https://www.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires/" target="_blank"> <img src="../static/img/linkedin-square-logo-24.png" alt="linkedin" width="40" height="40"></a>
-            <a href="https://twitter.com/gcba" target="_blank"><img src="../static/img/twitter-logo-24.png" alt="twitter" width="40" height="40"></a>
-        </p>
     </footer>
 </body>
 
