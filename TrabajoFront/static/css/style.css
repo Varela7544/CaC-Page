@@ -1,10 +1,12 @@
 * {
-    font-family: "Encode Sans",Arial,sans-serif;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 body {
     margin: 0px;
     padding: 0px;
+   
+    
 }
 
 
@@ -17,16 +19,18 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     padding-left: 20%;
+    
 }
 
-.logo-header{
+.logo-header {
     margin-right: 0.5em;
 }
 
 nav h3 {
     color: white;
-    font-style: oblique;
+    font-style: bold;
     font-weight: 800;
+   
 }
 
 /*FIN DE ESTILOS DEL HEADER*/
@@ -35,7 +39,7 @@ nav h3 {
 /*COMIENZO DE ESTILOS DEL MAIN*/
 
 .background-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../img/elecciones-background.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/elecciones-background.jpg');
     background-position: center center;
     background-size: cover;
     padding: 0;
@@ -47,7 +51,7 @@ nav h3 {
 }
 
 .background-section h2 {
-    text-shadow: 0 2px 2px rgba(0,0,0,.5);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
     font-weight: 700;
     line-height: 1.1;
     font-size: 3em;
@@ -55,7 +59,7 @@ nav h3 {
 
 .background-section h5 {
     text-align: center;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 500;
 }
 
@@ -64,31 +68,32 @@ nav h3 {
     .background-section h2 {
         font-size: 2.5em;
     }
+
     .background-section h5 {
         font-size: 16px;
     }
-  }
+}
 
 @media (max-width: 500px) {
     .background-section h2 {
         font-size: 2em;
     }
+
     .background-section h5 {
         font-size: 0.9em;
     }
-  }
+}
 
 /*COMIENZO DE ESTILOS DEL FOOTER*/
 
-h1{
-    
+h1 {
+
     padding: 5%;
     margin: 1px;
     color: black;
-    justify-content: center ;
+    justify-content: center;
     background-color: #37bbed;
     display: flex
-    
 }
 
 footer {
@@ -106,11 +111,11 @@ footer {
 
 @media (max-width: 700px) {
     .footer-contacto-logo {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-  }
+}
 
 .image-footer {
     text-align: center;
@@ -121,7 +126,7 @@ footer {
 .image-footer h3 {
     font-size: 3em;
     color: white;
-    font-style: oblique;
+    font-style: bold;
     font-weight: 800;
 }
 
@@ -130,14 +135,15 @@ footer {
     text-align: center;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
     color: rgb(236, 236, 236);
 }
 
 #nombre {
     width: 18em;
     border-radius: 17px;
-    background: rgba(0,0,0,0.05);
+    background: rgba(0, 0, 0, 0.05);
     border: none;
     font-size: 17px;
     padding-left: 10px;
@@ -149,7 +155,7 @@ input::placeholder, textarea::placeholder {
 #mail {
     width: 18em;
     border-radius: 17px;
-    background: rgba(0,0,0,0.05);
+    background: rgba(0, 0, 0, 0.05);
     border: none;
     font-size: 17px;
     padding-left: 10px;
@@ -157,10 +163,10 @@ input::placeholder, textarea::placeholder {
     padding-bottom: 3px;
 }
 
-#text-area{
+#text-area {
     width: 18em;
     border-radius: 17px;
-    background: rgba(0,0,0,0.05);
+    background: rgba(0, 0, 0, 0.05);
     border: none;
     font-size: 17px;
     padding-left: 10px;
@@ -168,7 +174,7 @@ input::placeholder, textarea::placeholder {
     padding-bottom: 3px;
 }
 
-#submit{
+#submit {
     width: 19.5em;
     height: 2em;
     margin: 20px auto;
@@ -184,26 +190,41 @@ input::placeholder, textarea::placeholder {
 /*COMIENZO DE ESTILOS DEL FORM*/
 
 #bodyform {
-    background-color: #37bbed;
+    background-color: #ffffff;
 }
 
-#h1form{
+#h1form {
     
-    padding: 5%;
-    margin: 1px;
+    padding: 2.6%;
+    margin: 0px;
     color: white;
-    justify-content: center ;
+    justify-content: center;
     background-color: #37bbed;
     display: flex
+}
+
+.enlaces {
+    text-decoration: none;
+}
+
+#homenav{
     
+    padding: 1.6%;
+    background-color: rgb(51, 51, 51);
+}
+
+#HOME{
+    font-size: 20px;
+    font-weight: bolder;
+    color:white;
 }
 
 #Apellido {
-    
+
     color: black;
     width: 18em;
     border-radius: 17px;
-    background:rgba(0,0,0,0.05);
+    background: rgba(0, 0, 0, 0.05);
     border: none;
     font-size: 17px;
     padding-left: 10px;
@@ -214,7 +235,7 @@ input::placeholder, textarea::placeholder {
 #Nombre {
     width: 18em;
     border-radius: 17px;
-    background:rgba(0,0,0,0.05);
+    background: rgba(0, 0, 0, 0.05);
     border: none;
     font-size: 17px;
     padding-left: 10px;
@@ -225,7 +246,7 @@ input::placeholder, textarea::placeholder {
 #dni {
     width: 18em;
     border-radius: 17px;
-    background:rgba(0,0,0,0.05);
+    background: rgba(7, 6, 8, 0.05);
     border: none;
     font-size: 17px;
     padding-left: 10px;
@@ -236,7 +257,7 @@ input::placeholder, textarea::placeholder {
 #numerodetramite {
     width: 18em;
     border-radius: 17px;
-    background:rgba(0,0,0,0.05);
+    background: rgba(0, 0, 0, 0.05);
     border: none;
     font-size: 17px;
     padding-left: 10px;
@@ -245,19 +266,20 @@ input::placeholder, textarea::placeholder {
 }
 
 #fechadenac {
-    
+
     width: 18em;
     border-radius: 17px;
-    background:rgba(0,0,0,0.05);
+    background: rgba(0, 0, 0, 0.05);
     border: none;
     font-size: 17px;
     padding-left: 10px;
     padding-top: 3px;
     padding-bottom: 3px;
-    color:whitesmoke
+    color: whitesmoke
 }
 
 .form {
+    background-color: #37bbed;
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
@@ -265,22 +287,22 @@ input::placeholder, textarea::placeholder {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  .form input {
+}
+
+.form input {
     width: 90%;
     height: 30px;
     margin: 0.5rem;
-  }
-  
-  .form button {
+}
+
+.form button {
     padding: 0.5em 1em;
     border: none;
     background: rgb(100, 200, 255);
     cursor: pointer;
-  }
+}
 
-  #navcandidatos {
+#navcandidatos {
     justify-content: right;
     display: flex;
     background-color: #37bbed;
