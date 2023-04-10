@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/regular.min.css" integrity="sha512-WidMaWaNmZqjk3gDE6KBFCoDpBz9stTsTZZTeocfq/eDNkLfpakEd7qR0bPejvy/x0iT0dvzIq4IirnBtVer5A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <title>Sistema de Votacion - VOT.AR</title>
 </head>
 
@@ -37,12 +38,14 @@
                 <h5>Realiza tu votación de manera rapida, eficaz y sin demoras.</h5>
             </div>
         </section>
-        
+
+
+
         <section class="votacion-2023-informacion">
             <div class="votacion-2023-parrafo">
-                <p>Este año argentinos y argentinas volvemos a las urnas para renovar a nuestro <strong>Presidente/a, Vicepresindente/a </strong> y a nuestros <strong>Gobernadores.</strong></p>
-                <p>De tal modo, desarrollamos un sistema <strong>unico.</strong> Capaz de hacer las votaciones cotidianas, a hacerlas online. Desarrollamos <strong>VOT.AR</strong></p>
-                <P>Usted podra ingresar a la votación con unicamente tu <strong>documento, numero de tramite y el genero que figure en tu documento.</strong> Automaticamente te figuran las listas correspondientes para tu padrón.</P>
+                <p>En este año 2023, nosotros los argentinos y argentinas volvemos a las urnas para renovar a nuestro <strong>Presidente/a, Vicepresindente/a </strong> y a nuestros <strong>Gobernadores.</strong>
+                    De este modo, desarrollamos un <strong>sistema unico</strong> capaz de hacer las votaciones cotidianas de <strong>manera totalmente Online.</strong></p>
+                <P>Para eso desarrollamos <strong>VOT.AR:</strong> Podés ingresar a tu padrón a votar con tan solo tu <strong>Documento (DNI), Número de Trámite y el género que figure en tu documento.</strong> Automaticamente te van figuran las listas correspondientes.</P>
             </div>
         </section>
 
@@ -71,35 +74,48 @@
     </main>
     <!--FOOTER CON FORMULARIO-->
     <footer>
-        <div class="footer-contacto-logo">
-            <div class="image-footer">
-                <img src="static/img/ballot-box.png" alt="logo-vot.ar">
-                <h3>VOT.AR</h3>
-                
+        <div class="footer-sin-form">
+            <div class="image-footer-sin-form">
+                <h3>SOBRE NOSOTROS</h3>
+                <p>Somos una compañania dedicada a la solución de problemas mediante software. En este caso, desarrollamos VOT.AR, que cuenta con las ultimas tecnologias para una eficas votación para toda nuesta Argentina.</p>
                 <p>
                     <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook fa-2xl" style="color: #0545a2;"></i></a>
                     <a href="https://www.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"style="color: #0545a2;"></i></a>
                     <a href="https://twitter.com/gcba" target="_blank"><i class="fa-brands fa-square-twitter fa-2xl" style="color: #0545a2;"></i></a>
                 </p>
-
+                
             </div>
-    
-            <div class="footer-contacto">
-                <form action="GET">
-                    <p>
-                        <input type="text" placeholder="Nombre:" required id="nombre">
-                    </p>
-                    <p>
-                        <input type="email" placeholder="Email:" required id="mail">
-                    </p>
-                    <p>
-                        <textarea cols="30" rows="10" placeholder="Escribe tu consulta:" required id="text-area"></textarea>
-                    </p>
-                    <input type="submit" value="Enviar" id="submit">
-                </form>
+
+            <div class="info-nuestra">
+                <h3>NAVEGACIÓN</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="pages/form.html">Tus datos</a></li>
+                    <li><a href="pages/consultas.html">FAQ</a></li>
+                    <li><a href="#">Terminos y Condiciones</a></li>
+                    <li><a href="pages/consultas.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="direccion">
+                <h3>CONTACTANOS</h3>
+                <ul>
+                    <li>
+                        <span><i class="fa-solid fa-map-pin" style="color: #0545a2;"></i></span>
+                        <span>Gascón 352 - CABA</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-phone" style="color: #0545a2;"></i></i></i></span>
+                        <span>Teléfono: (+54) 11 3343 - 5210</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-envelope" style="color: #0545a2;"></i></i></span>
+                        <span>Correo electrónico: elecciones@elecciones.gob.ar</span>
+                    </li>
+                </ul>
             </div>
         </div>
-    </footer>   
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 
 </html>

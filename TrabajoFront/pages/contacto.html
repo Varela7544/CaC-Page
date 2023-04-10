@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../static/css/style.css">
-    
-    <title>Sitio para Verificar Identidad</title>
-    
+    <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon">
+    <title>Espacio de Consultas - VOT.AR</title>
 </head>
-
-<body id="bodyform">
+<body>
     <!--BARRA DE NAVEGACION HEADER-->
     <header>
         <nav>
@@ -26,35 +22,37 @@
             </div>
         </nav>
     </header>
-    <div class="form">
-        <form action="GET">
-            <p>
-                <input type="text" placeholder="Apellido:" required id="Apellido">
-            </p>
-            <p>
-                <input type="text" placeholder="Nombre:" required id="Nombre">
-            </p>
-            <p>
-                <input type="number" placeholder="DNI:" required id="dni">
-            </p>
-            <p>
-                <input type="number" placeholder="Número de tramite:" required id="numerodetramite">
-            </p>
-            <p>
-                <div style="color: white;">Fecha de nacimiento: </div>
-                <input type="date" name="fechadenac" required id="fechadenac"  >
-            </p>
-            <input type="submit" value="Enviar" id="submit">
-        </form>
-    </div>
-    <br>
-
-    <div>
-        <nav ><a class="enlaces" href="./candidatos.html" id="navcandidatos"> Paso siguiente</a></nav>
-    </div>
-
-    <br><br>
-    <!--FOOTER CON FORMULARIO-->
+    <!--FOOTER CON FORMULARIO-->  
+    <footer>
+        <div class="footer-contacto-logo">
+            <div class="image-footer">
+                <img src="../static/img/ballot-box.png" alt="logo-vot.ar">
+                <h3>VOT.AR</h3>
+                
+                <p>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook fa-2xl" style="color: #0545a2;"></i></a>
+                    <a href="https://www.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"style="color: #0545a2;"></i></a>
+                    <a href="https://twitter.com/gcba" target="_blank"><i class="fa-brands fa-square-twitter fa-2xl" style="color: #0545a2;"></i></a>
+                </p>
+    
+            </div>
+    
+            <div class="footer-contacto">
+                <form action="GET">
+                    <p>
+                        <input type="text" placeholder="Nombre:" required id="nombre">
+                    </p>
+                    <p>
+                        <input type="email" placeholder="Email:" required id="mail">
+                    </p>
+                    <p>
+                        <textarea cols="30" rows="10" placeholder="Escribe tu consulta:" required id="text-area"></textarea>
+                    </p>
+                    <input type="submit" value="Enviar" id="submit">
+                </form>
+            </div>
+        </div>
+    </footer> 
     <footer>
         <div class="footer-sin-form">
             <div class="image-footer-sin-form">
@@ -97,7 +95,6 @@
             </div>
         </div>
     </footer>
-
 </body>
-
 </html>
+
