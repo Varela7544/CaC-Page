@@ -452,42 +452,9 @@ input::placeholder, textarea::placeholder {
     
 }
 
-#Apellido {
+.datos-form p input {
     
     color: black;
-    width: 18em;
-    border-radius: 17px;
-    background:rgba(0,0,0,0.05);
-    border: none;
-    font-size: 17px;
-    padding-left: 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-
-#Nombre {
-    width: 18em;
-    border-radius: 17px;
-    background:rgba(0,0,0,0.05);
-    border: none;
-    font-size: 17px;
-    padding-left: 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-
-#dni {
-    width: 18em;
-    border-radius: 17px;
-    background:rgba(0,0,0,0.05);
-    border: none;
-    font-size: 17px;
-    padding-left: 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-
-#numerodetramite {
     width: 18em;
     border-radius: 17px;
     background:rgba(0,0,0,0.05);
@@ -534,7 +501,5 @@ input::placeholder, textarea::placeholder {
     cursor: pointer;
   }
 
-
-
-
+  
 /*FIN DE ESTILOS DEL FORM*/
