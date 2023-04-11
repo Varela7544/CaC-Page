@@ -439,7 +439,7 @@ input::placeholder, textarea::placeholder {
 /*COMIENZO DE ESTILOS DEL FORM*/
 
 #bodyform {
-    background-color: #ffffff;
+    background-image: url(../img/elecciones-background.jpg);
 }
 
 #h1form{
@@ -452,30 +452,49 @@ input::placeholder, textarea::placeholder {
     
 }
 
+.h1especial{
+
+    margin-top: 4rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    background-color: white;
+
+}
+
 .datos-form p input {
     
     color: black;
     width: 18em;
     border-radius: 17px;
-    background:rgba(0,0,0,0.05);
+    background:rgba(253, 251, 251, 0.521);
+    /* background-color: rgba(255, 255, 255, 0.121) */
     border: none;
     font-size: 17px;
     padding-left: 10px;
     padding-top: 3px;
-    padding-bottom: 3px;
+    padding-bottom: 3px
+}
+
+.datos-form ::placeholder{
+    color:black;
 }
 
 #fechadenac {
     
     width: 18em;
     border-radius: 17px;
-    background:rgba(0,0,0,0.05);
+    /* background:rgba(0,0,0,0.05); */
+    background:rgba(253, 251, 251, 0.646);
     border: none;
     font-size: 17px;
     padding-left: 10px;
     padding-top: 3px;
     padding-bottom: 3px;
-    color:whitesmoke
+    color: black
+}
+
+#navcandidatos{
+    background-color: rgba(240, 248, 255, 0);
 }
 
 .form {
