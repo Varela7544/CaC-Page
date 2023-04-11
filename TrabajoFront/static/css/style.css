@@ -498,7 +498,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .form {
-    background-color: #37bbed;
+    /* background-color: #37bbed; */
     width: 100%;
     max-width: 600px;
     height: 600px;
