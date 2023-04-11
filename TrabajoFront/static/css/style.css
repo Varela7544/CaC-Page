@@ -429,7 +429,7 @@ input::placeholder, textarea::placeholder {
     .info-nuestra {
         margin-left: 0;
     }
-    .footer-sin-for {
+    .footer-sin-form {
         width: 90%;
     }
 }
@@ -439,7 +439,7 @@ input::placeholder, textarea::placeholder {
 /*COMIENZO DE ESTILOS DEL FORM*/
 
 #bodyform {
-    background-color: #37bbed;
+    background-color: #ffffff;
 }
 
 #h1form{
