@@ -439,7 +439,7 @@ input::placeholder, textarea::placeholder {
 /*COMIENZO DE ESTILOS DEL FORM*/
 
 #bodyform {
-    background-image: url(../img/elecciones-background.jpg);
+    background-image: url(../img/urna_backgroung.jpg);
 }
 
 #h1form{
@@ -466,7 +466,7 @@ input::placeholder, textarea::placeholder {
     color: black;
     width: 18em;
     border-radius: 17px;
-    background:rgba(253, 251, 251, 0.521);
+    background:rgba(253, 251, 251, 0.667);
     /* background-color: rgba(255, 255, 255, 0.121) */
     border: none;
     font-size: 17px;
@@ -484,7 +484,7 @@ input::placeholder, textarea::placeholder {
     width: 18em;
     border-radius: 17px;
     /* background:rgba(0,0,0,0.05); */
-    background:rgba(253, 251, 251, 0.646);
+    background:rgba(253, 251, 251, 0.598);
     border: none;
     font-size: 17px;
     padding-left: 10px;
