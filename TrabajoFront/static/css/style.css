@@ -13,7 +13,6 @@ body {
 /*COMIENZO DE ESTILOS DEL HEADER*/
 
 header {
-    position: sticky;
     width: 100%;
     top: 0;
     
