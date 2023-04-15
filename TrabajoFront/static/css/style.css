@@ -12,12 +12,6 @@ body {
 
 /*COMIENZO DE ESTILOS DEL HEADER*/
 
-header {
-    width: 100%;
-    top: 0;
-    
-}
-
 nav {
     display: flex;
     background-color: #37bbed;
@@ -410,7 +404,7 @@ input::placeholder, textarea::placeholder {
 .direccion li
 {
     list-style: none;
-    margin-bottom: 1.3rem;
+    margin-bottom: 0.5rem;
 }
 
 .info-nuestra li a,
@@ -440,92 +434,3 @@ input::placeholder, textarea::placeholder {
 }
 
 /*FIN DE ESTILOS DEL FOOTER*/
-
-/*COMIENZO DE ESTILOS DEL FORM*/
-
-#bodyform {
-    background-image: url(../img/urna_backgroung.jpg);
-}
-
-#h1form{
-    padding: 2%;
-    margin: 1px;
-    color: white;
-    justify-content: center ;
-    background-color: #37bbed;
-    display: flex
-    
-}
-
-.h1especial{
-
-    margin-top: 4rem;
-    text-align: center;
-    margin-bottom: 4rem;
-    background-color: white;
-
-}
-
-.datos-form p input {
-    
-    color: black;
-    width: 18em;
-    border-radius: 17px;
-    background:rgba(253, 251, 251, 0.667);
-    /* background-color: rgba(255, 255, 255, 0.121) */
-    border: none;
-    font-size: 17px;
-    padding-left: 10px;
-    padding-top: 3px;
-    padding-bottom: 3px
-}
-
-.datos-form ::placeholder{
-    color:black;
-}
-
-#fechadenac {
-    
-    width: 18em;
-    border-radius: 17px;
-    /* background:rgba(0,0,0,0.05); */
-    background:rgba(253, 251, 251, 0.598);
-    border: none;
-    font-size: 17px;
-    padding-left: 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    color: black
-}
-
-#navcandidatos{
-    background-color: rgba(240, 248, 255, 0);
-}
-
-.form {
-    /* background-color: #37bbed; */
-    width: 100%;
-    max-width: 600px;
-    height: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .form input {
-    width: 90%;
-    height: 30px;
-    margin: 0.5rem;
-  }
-  
-  .form button {
-    padding: 0.5em 1em;
-    border: none;
-    background: rgb(100, 200, 255);
-    cursor: pointer;
-  }
-
-  
-/*FIN DE ESTILOS DEL FORM*/
