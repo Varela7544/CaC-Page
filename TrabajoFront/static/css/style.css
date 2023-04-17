@@ -405,19 +405,20 @@ footer {
 /* ESTILOS FORMULARIO */
 .formulario-datos {
     display: flex;
-    width: 40%;
+    width: 35%;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .formulario-datos form {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 70%;
     align-items: center;
     justify-content: center;
-    margin: 10%;
     box-shadow: 27px 38px 15px -12px rgba(0,0,0,0.2);
     border-radius: 15px;
     padding: 10%;
@@ -430,23 +431,54 @@ footer {
 .formulario-datos input {
     border: none;
     width: 70%;
+    margin-left: 10px;
+    font-size: 1rem;
 }
 
 .input-style {
     display: flex;  
-    margin: 1.5rem;
+    margin: 10px;
     width: 70%;
     height: 2rem;
     align-items: center;
     justify-content: center ;
     background-color: white;
     border-radius: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 #submit{
     width: 70%;
     border-radius: 15px;
-    margin-top: 15px;
+    margin-top: 30px;
     background-color: #3bb8ea;
     color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width:1024px) {
+    .formulario-datos {
+        width: 45%;
+    }
+}
+
+@media (max-width:768px) {
+    .formulario-datos {
+        width: 70%;
+    }
+}
+
+@media (max-width:600px) {
+    .formulario-datos {
+        width: 100%;
+    }
+}
+
+
+@media (max-width:375px) {
+    .input-style,
+    #submit
+     {
+        width: 100%;
+    }
 }
