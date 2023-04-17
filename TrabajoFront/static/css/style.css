@@ -302,8 +302,7 @@ footer {
     text-align: center;
 }
 
-
-#nombre {
+#nombre, #mail, #text-area{
     width: 18em;
     border-radius: 17px;
     background: rgba(0,0,0,0.05);
@@ -312,9 +311,11 @@ footer {
     padding-left: 10px;
     padding-top: 3px;
     padding-bottom: 3px;
-    color: white;
 }
 
+.color-placehold::placeholder{
+    color:white;
+}
 
 .footer-sin-form {
     width: 70%;
