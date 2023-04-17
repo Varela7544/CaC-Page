@@ -302,9 +302,6 @@ footer {
     text-align: center;
 }
 
-input::placeholder, textarea::placeholder {
-    color: rgb(236, 236, 236);
-}
 
 #nombre {
     width: 18em;
@@ -316,39 +313,6 @@ input::placeholder, textarea::placeholder {
     padding-top: 3px;
     padding-bottom: 3px;
     color: white;
-}
-
-#mail {
-    width: 18em;
-    border-radius: 17px;
-    background: rgba(0,0,0,0.05);
-    border: none;
-    font-size: 17px;
-    padding-left: 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-
-#text-area{
-    width: 18em;
-    border-radius: 17px;
-    background: rgba(0,0,0,0.05);
-    border: none;
-    font-size: 17px;
-    padding-left: 10px;
-    padding-top: 7px;
-    padding-bottom: 3px;
-}
-
-#submit{
-    width: 19.5em;
-    height: 2em;
-    margin: 20px auto;
-    border-radius: 10px;
-    border: none;
-    background: #0545a2;
-    color: white;
-    font-size: 1em;
 }
 
 
@@ -434,3 +398,51 @@ input::placeholder, textarea::placeholder {
 }
 
 /*FIN DE ESTILOS DEL FOOTER*/
+
+
+
+
+/* ESTILOS FORMULARIO */
+.formulario-datos {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario-datos form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+    box-shadow: 27px 38px 15px -12px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    padding: 10%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../img/elecciones-background.jpg');
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+.formulario-datos input {
+    border: none;
+}
+
+.input-style {
+    display: flex;  
+    margin: 1.5rem;
+    width: 50%;
+    align-items: center;
+    justify-content: center ;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#submit-button {
+    width: 50%;
+    border-radius: 15px;
+    margin-top: 15px;
+}

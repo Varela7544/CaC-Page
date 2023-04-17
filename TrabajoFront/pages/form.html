@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../static/css/style.css">
     
     <title>Verificación de Identidad</title>
@@ -38,7 +39,39 @@
         </section>
 
         <section class="formulario-datos">
+            <form action="GET">
+                <div class="input-style">
+                    <span class="input-item">
+                        <i class="fa-solid fa-user" style="color: #37bbed;"></i>
+                    </span>
+                    <input type="text" placeholder="Nombre y Apellido" required>
+                </div>
+                <div class="input-style">
+                    <span class="input-item">
+                        <i class="fa-solid fa-address-card" style="color: #37bbed;"></i>
+                    </span>
+                    <input list="tipos-dni" placeholder="Tipo documentacion" required>
+                </div>
+                <div class="input-style">
+                    <span class="input-item">
+                        <i class="fa-solid fa-venus-mars" style="color: #37bbed;"></i>
+                    </span>
+                    <input list="generos" placeholder="Genero" required>
+                </div>
+                <input type="submit" value="Enviar" class="submit-button" id="submit">
 
+                <datalist id="tipos-dni">
+                    <option value="DNI">
+                    <option value="LC">
+                    <option value="LE">
+                    <option value="CI">
+                  </datalist>
+                <datalist id="generos">
+                    <option value="Masculino">
+                    <option value="Femenino">
+                    <option value="No binario">
+                </datalist>
+            </form>
         </section>
     </main>
     <!--FOOTER-->
