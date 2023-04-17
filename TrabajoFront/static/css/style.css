@@ -456,9 +456,15 @@ footer {
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 
+@media (max-width:1200px) {
+    .formulario-datos {
+        width: 50%;
+    }
+}
+
 @media (max-width:1024px) {
     .formulario-datos {
-        width: 45%;
+        width: 60%;
     }
 }
 
@@ -472,10 +478,15 @@ footer {
     .formulario-datos {
         width: 100%;
     }
+    .input-style,
+    #submit
+     {
+        width: 70%;
+    }
 }
 
 
-@media (max-width:375px) {
+@media (max-width:420px) {
     .input-style,
     #submit
      {
