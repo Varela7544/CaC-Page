@@ -196,31 +196,24 @@ nav h3 {
     }
 }
 
-
 .background-section-candidatos {
     background-color: #333;
-    background-position: center center;
-    background-size: cover;
-    padding: 0;
     color: white;
     display: flex;
-    justify-content: start;
+    flex-direction: row;
     align-items: center;
-    height: 50px;
+    padding-left: 18%;
+    font-size: 0.8rem;
 }
 
-.background-section-candidatos h3 {
-    width: 100%;
-    font-size: 1rem;
-    font-weight: 100;
-    margin-left: 13rem;
+.candidatos-header h3 {
+    font-weight: 200;
 }
 
-#main-postulantes {
-    text-align: center;
-}
+
 .informacion-postulantes{
-    margin-top: 4rem;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .cards-postulantes {
@@ -230,7 +223,9 @@ nav h3 {
     column-gap: 1rem;
     row-gap: 1rem;
     margin-top: 4rem;
+    margin-bottom: 4rem;
     width: 80%;
+    justify-items: center;
 }
 
 .cards-postulantes > div {
@@ -239,6 +234,7 @@ nav h3 {
     font-size: 1.5em;
     box-shadow: 0 0 2em -1em black;
     width: 60%;
+    text-align: center;
 }
 
 .cards-postulantes > div:hover {
@@ -261,6 +257,20 @@ nav h3 {
 .presidente-5 img{
     width: 50%;
     border-radius: 5%;
+}
+
+
+
+@media (max-width:1024px) {
+    .cards-postulantes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:768px) {
+    .cards-postulantes {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 /*COMIENZO DE ESTILOS DEL FOOTER*/
