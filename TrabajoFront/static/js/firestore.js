@@ -20,7 +20,7 @@ export async function chequeaSiExiste(inputValue,todo) {
 };
 
 function abrir() {
-    window.open("/CaC-Page/TrabajoFront/pages/candidatosPresidentes.html","_self")
+    window.open("/pages/candidatosPresidentes.html","_self")
 }
 
 
