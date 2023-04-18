@@ -46,18 +46,12 @@
         </section>
 
         <section class="formulario-datos">
-            <form action="../pages/candidatos.html">
+            <form id="form-identificacion">
                 <div class="input-style">
                     <span class="input-item">
                         <i class="fa-solid fa-user" style="color: #37bbed;"></i>
                     </span>
-                    <input type="text" placeholder="Nombre y Apellido" required>
-                </div>
-                <div class="input-style">
-                    <span class="input-item">
-                        <i class="fa-solid fa-address-card" style="color: #37bbed;"></i>
-                    </span>
-                    <input list="tipos-dni" placeholder="Documentacion" required>
+                    <input type="text" placeholder="Nombre y Apellido" id="nombreCompleto" required>
                 </div>
                 <div class="input-style">
                     <span class="input-item">
@@ -67,18 +61,18 @@
                 </div>
                 <div class="input-style">
                     <span class="input-item">
+                        <i class="fa-solid fa-address-card" style="color: #37bbed;"></i>
+                    </span>
+                    <input type="number" placeholder="Nro Tramite" id="tipoDocumentacion" required>
+                </div>
+                <div class="input-style">
+                    <span class="input-item">
                         <i class="fa-solid fa-venus-mars" style="color: #37bbed;"></i>
                     </span>
-                    <input list="generos" placeholder="Genero" required>
+                    <input list="generos" placeholder="Genero"  id="genero" required>
                 </div>
                 <input type="submit" value="Enviar" class="submit-button" id="submit">
 
-                <datalist id="tipos-dni">
-                    <option value="DNI">
-                    <option value="LC">
-                    <option value="LE">
-                    <option value="CI">
-                  </datalist>
                 <datalist id="generos">
                     <option value="Masculino">
                     <option value="Femenino">
@@ -130,6 +124,34 @@
             </div>
         </div>
     </footer>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBtglfNZtiAto_Ggd8XCl4qZwc51FEGNtY",
+          authDomain: "vot-ar.firebaseapp.com",
+          databaseURL: "https://vot-ar-default-rtdb.firebaseio.com",
+          projectId: "vot-ar",
+          storageBucket: "vot-ar.appspot.com",
+          messagingSenderId: "972450378389",
+          appId: "1:972450378389:web:d503f0c2b6996095c8e19c",
+          measurementId: "G-B3VC7W9XHJ"
+        };
+      
+        // Initialize Firebase
+
+        firebase.initializeApp(firebaseConfig)
+      </script>
+    <script src="../static/js/app.js" type="module"></script>
 </body>
 
 </html>
