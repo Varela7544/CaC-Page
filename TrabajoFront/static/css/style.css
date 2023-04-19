@@ -219,7 +219,7 @@ nav h3 {
 .cards-postulantes {
     display: grid;
     margin: 0 auto;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 1rem;
     row-gap: 1rem;
     margin-top: 4rem;
@@ -254,7 +254,8 @@ nav h3 {
 .presidente-2 img,
 .presidente-3 img,
 .presidente-4 img,
-.presidente-5 img{
+.presidente-5 img,
+.presidente-6 img{
     width: 50%;
     border-radius: 5%;
 }
