@@ -1,17 +1,20 @@
 const db = firebase.firestore()
 
 
-export async function chequeaSiExiste(inputValue,todo) {
+export async function chequeaSiExiste(inputValue,todo,yaVotaste,valueDocumento,valueNombre,valueTipo,valueGenero) {
     const collection = db.collection("usuarios").doc(inputValue);
     collection.get().then((doc) => {
         if (doc.exists) {
-            console.log("Ya votaste!");
+            yaVotaste.className = 'yaVotasteEncendido';
+            valueDocumento.value = ""
+            valueNombre.value = ""
+            valueTipo.value = ""
+            valueGenero.value = ""
         }
         else {
             const response = db.collection("usuarios").doc(inputValue).set(todo)
-            console.log(document.location)
             abrir();
-            return response 
+            return response;
         }
     }).catch((error) =>
     {
@@ -20,7 +23,7 @@ export async function chequeaSiExiste(inputValue,todo) {
 };
 
 function abrir() {
-    window.open("/pages/candidatosPresidentes.html","_self")
+    window.open("candidatosPresidentes.html","_self")
 }
 
 

@@ -5,6 +5,7 @@ const documentoInput = document.getElementById("documento");
 const nombreCompleto = document.getElementById("nombreCompleto");
 const tipoDocumentacion = document.getElementById("tipoDocumentacion")
 const genero = document.getElementById("genero")
+const yaVotaste = document.querySelector(".yaVotasteApagado")
 
 
 form.addEventListener('submit', e => {
@@ -28,10 +29,9 @@ async function addValue(valueDocumento,valueNombre,valueTipo,valueGenero) {
             tipo_documento: valueTipo,
             genero: valueGenero
         }
-        const response = await chequeaSiExiste(valueDocumento,todo);
+        const response = await chequeaSiExiste(valueDocumento,todo,yaVotaste,documentoInput,nombreCompleto,tipoDocumentacion,genero);
+        console.log(response)
     }catch(error) {
         console.log(error)
     }
 };
-
-

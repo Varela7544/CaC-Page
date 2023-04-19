@@ -443,7 +443,7 @@ footer {
     border: none;
     width: 70%;
     margin-left: 10px;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .input-style {
@@ -456,16 +456,32 @@ footer {
     background-color: white;
     border-radius: 15px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    border: none;   
+}
+.formulario-datos input:focus {
+    outline-width: 0;
 }
 
 #submit{
     border-radius: 15px;
     margin-top: 30px;
+    margin-left: -5px;
     background-color: #3bb8ea;
     color: white;
     width: 70%;
 }
 
+.yaVotasteApagado h4{
+    color: red;
+    font-size: 1rem;
+    font-weight: 500;
+    display: none;
+}
+.yaVotasteEncendido h4{
+    color: red;
+    font-size: 1rem;
+    font-weight: 500;
+}
 
 @media (max-width:1200px) {
     .formulario-datos {
