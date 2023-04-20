@@ -210,6 +210,9 @@ nav h3 {
     font-weight: 200;
 }
 
+.tpinfo {
+    text-align: center;
+}
 
 .informacion-postulantes{
     margin: 0 auto;
@@ -250,16 +253,39 @@ nav h3 {
     color: black;
 }
 
+
 .presidente-1 img,
 .presidente-2 img,
 .presidente-3 img,
 .presidente-4 img,
 .presidente-5 img,
-.presidente-6 img{
+.presidente-6 img,
+.presidente-7 img{
     width: 50%;
     border-radius: 5%;
 }
 
+.diputado-1 img,
+.diputado-2 img,
+.diputado-3 img,
+.diputado-4 img,
+.diputado-5 img,
+.diputado-6 img,
+.diputado-7 img{
+    width: 50%;
+    border-radius: 5%;
+}
+
+.senador-1 img,
+.senador-2 img,
+.senador-3 img,
+.senador-4 img,
+.senador-5 img,
+.senador-6 img,
+.senador-7 img{
+    width: 50%;
+    border-radius: 5%;
+}
 
 
 @media (max-width:1024px) {
