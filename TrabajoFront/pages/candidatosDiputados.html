@@ -60,7 +60,7 @@
         </div>
         <section class="cards-postulantes">
             <div class="diputado-1">
-                <a href="#">
+                <a id="diputadoDespertar">
                     <img src="../static/img/Diputados/Diputado-1_UNITE_POR_LA_LIBERTAD_Y_LA_DIGNIDAD.jpg" alt="">
                     <h4>Nazareno Etchepare <br>
                         Unite por la Libertad y la Dignidad
@@ -68,7 +68,7 @@
                 </a>
             </div>
             <div class="diputado-2">
-                <a href="#">
+                <a id="diputadoConsenso">
                     <img src="../static/img/Diputados/Diputado-2_AUTODETERMINACION_Y_LIBERTAD_CIUDAD_AUTONOMA_DE_BUENOS_AIRES.jpg"
                         alt="">
                     <h4>Luiz Zamora <br>
@@ -77,7 +77,7 @@
                 </a>
             </div>
             <div class="diputado-3">
-                <a href="#">
+                <a id="diputadoIzquierda">
                     <img src="../static/img/Diputados/Diputado-3_FRENTE_DE_LA_IZQUIERDA_Y_DE_TRABAJADORES.jpg" alt="">
                     <h4>Myriam Bregman <br>
                         Frente de Izquierda y de Trabajadores
@@ -85,7 +85,7 @@
                 </a>
             </div>
             <div class="diputado-4">
-                <a href="#">
+                <a id="diputadoTodos">
                     <img src="../static/img/Diputados/Diputado-4_FRENTE_DE_TODOS_CIUDAD_AUTONOMA_DE_BUENOS_AIRES.jpg"
                         alt="">
                     <h4>Fernando "Pino" Solanas <br>
@@ -94,7 +94,7 @@
                 </a>
             </div>
             <div class="diputado-5">
-                <a href="#">
+                <a id="diputadoJuntos">
                     <img src="../static/img/Diputados/Diputado-5_JUNTOS_POR_EL_CAMBIO_CIUDAD_AUTONOMA_DE_BUENOS_AIRES.jpg"
                         alt="">
                     <h4>Maxi Ferraro <br>
@@ -103,15 +103,9 @@
                 </a>
             </div>
             <div class="diputado-6">
-                <a href="#">
+                <a id="diputadoBlanco">
                     <img src="../static/img/voto_en_blanco.jpg" alt="en_blanco">
                     <h4>Voto en Branco</h4>
-                </a>
-            </div>
-            <div class="diputado-6">
-                <a href="#">
-                    <img src="../static/img/voto_anulado.jpg" alt="nulo">
-                    <h4>Anular Voto</h4>
                 </a>
             </div>
         </section>
@@ -167,6 +161,33 @@
             </div>
         </div>
     </footer>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBtglfNZtiAto_Ggd8XCl4qZwc51FEGNtY",
+          authDomain: "vot-ar.firebaseapp.com",
+          databaseURL: "https://vot-ar-default-rtdb.firebaseio.com",
+          projectId: "vot-ar",
+          storageBucket: "vot-ar.appspot.com",
+          messagingSenderId: "972450378389",
+          appId: "1:972450378389:web:d503f0c2b6996095c8e19c",
+          measurementId: "G-B3VC7W9XHJ"
+        };
+      
+        // Initialize Firebase
+
+        firebase.initializeApp(firebaseConfig)
+      </script>
+    <script src="../static/js/app.js" type="module"></script>
 </body>
 
 </html>
