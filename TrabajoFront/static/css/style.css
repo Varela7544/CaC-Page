@@ -422,6 +422,19 @@ footer {
 
 /*ESTILOS FAQ*/
 
+#faq{
+    text-align: center;
+    justify-content: center;
+    margin: auto 0 0 0;
+    font-size: 35px;
+    background-color: white;
+    margin:0 auto;
+}
+
+.background-faq{
+    /* background-image: url('../img/elecciones-background.jpg'); */
+}
+
 .question-container {
     margin-bottom: 10px;
   }
@@ -430,15 +443,23 @@ footer {
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     border-radius: 1rem;
     font-weight: bold;
     text-decoration: none;
     padding: 1rem;
     color: white;
     border: 1px solid #37bbed;
-    font-size: 1rem;
+    font-size: 20px;
     background-color: #37bbed;
+    flex-direction: column;
+    width: 50%; 
+    /* box-shadow: 27px 38px 15px -12px rgba(0,0,0,0.2); */
+    border-radius: 15px;
+    padding: 1.7%;
+    background-position: center;
+    background-size: cover;
+    margin:0 auto;
   }
   
   .question i {
@@ -454,8 +475,12 @@ footer {
     padding: 1rem;
     background-color: #fff;
     border-radius: 1rem;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 1.5;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
   }
   
   .answer.show {
@@ -474,8 +499,8 @@ footer {
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 2%;
+    margin-bottom: 3%; 
 }
 
 .formulario-datos form {
