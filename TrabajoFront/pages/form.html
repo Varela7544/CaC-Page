@@ -57,29 +57,29 @@
                     <span class="input-item">
                         <i class="fa-solid fa-address-card" style="color: #37bbed;"></i>
                     </span>
-                    <input type="number" name="Documento" id="documento" placeholder="documento" required>
+                    <input type="number" name="Documento" id="documento" placeholder="Documento (Sin puntos ni espacios)" required>
                 </div>
                 <div class="input-style">
                     <span class="input-item">
                         <i class="fa-solid fa-address-card" style="color: #37bbed;"></i>
                     </span>
-                    <input type="number" placeholder="Nro Tramite" id="tipoDocumentacion" required>
+                    <input type="number" placeholder="N° de Trámite" id="tipoDocumentacion" required>
                 </div>
                 <div class="input-style">
                     <span class="input-item">
                         <i class="fa-solid fa-venus-mars" style="color: #37bbed;"></i>
                     </span>
-                    <input list="generos" placeholder="Genero"  id="genero" required>
+                    <input list="generos" placeholder="Género"  id="genero" required>
                 </div>
                 <input type="submit" value="Enviar" class="submit-button" id="submit">
 
                 <datalist id="generos">
                     <option value="Masculino">
                     <option value="Femenino">
-                    <option value="No binario">
+                    <option value="No Binario / Otro">
                 </datalist>
                 <div class="yaVotasteApagado">
-                    <h4>Ya votaste! No puedes votar de nuevo!</h4>
+                    <h4><strong>¡Ya votaste!</strong> No puedes votar de nuevo.</h4>
                 </div>
             </form>
         </section>
@@ -122,6 +122,10 @@
                     <li>
                         <span><i class="fa-solid fa-envelope" style="color: #0545a2;"></i></i></span>
                         <span>Correo electrónico: elecciones@elecciones.gob.ar</span>
+
+                        <!-- Estaría bueno que cambiaramos la info a algo genérico
+                            y que crearamos un mail para el showcase de la página -->
+                            
                     </li>
                 </ul>
             </div>
