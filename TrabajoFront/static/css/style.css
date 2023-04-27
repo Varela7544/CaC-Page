@@ -420,6 +420,50 @@ footer {
 
 /*FIN DE ESTILOS DEL FOOTER*/
 
+/*ESTILOS FAQ*/
+
+.question-container {
+    margin-bottom: 10px;
+  }
+  
+  .question {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+    border: 1px solid #37bbed;
+    font-size: 1rem;
+    background-color: #37bbed;
+  }
+  
+  .question i {
+    transition: transform 0.3s;
+  }
+  
+  .question.active i {
+    transform: rotate(90deg);
+  }
+  
+  .answer {
+    display: none;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .answer.show {
+    display: block;
+  }
+
+
+/*FIN DE ESTILOS FAQ*/
 
 
 
