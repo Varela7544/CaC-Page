@@ -216,3 +216,6 @@ async function votar(partidoPolitico,tipoVotacion) {
     }
 };
 
+
+
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css"
+        integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css"
+        integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/regular.min.css"
+        integrity="sha512-WidMaWaNmZqjk3gDE6KBFCoDpBz9stTsTZZTeocfq/eDNkLfpakEd7qR0bPejvy/x0iT0dvzIq4IirnBtVer5A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Resultados - VOT.AR</title>
+</head>
+
+<body>
+
+    <!--BARRA DE NAVEGACION HEADER-->
+    <header>
+        <nav>
+            <div class="logo-header">
+                <a href="../index.html"><img src="../static/img/favicon-32x32.png" alt=""></a>
+            </div>
+            <div class="vot-ar-header">
+                <h3>
+                    VOT.AR
+                </h3>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="background-section-candidatos">
+            <div class="candidatos-header">
+                <h3>
+                    Elecciones Generales 2023
+                </h3>
+            </div>
+        </section>
+
+        <div id="columnchart_values_presidentes"></div>
+        <div id="columnchart_values_senadores"></div>
+        <div id="columnchart_values_diputados"></div>
+
+    </main>
+    <!--FOOTER CON FORMULARIO-->
+    <footer>
+        <div class="footer-sin-form">
+            <div class="image-footer-sin-form">
+                <h3>SOBRE NOSOTROS</h3>
+                <p>Somos una compañanía dedicada a la solución de problemas mediante software. En este caso,
+                    desarrollamos VOT.AR, que cuenta con las últimas tecnologías para una eficaz votación en toda
+                    nuestra Argentina.</p>
+                <p>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook fa-2xl"
+                            style="color: #0545a2;"></i></a>
+                    <a href="https://www.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires/" target="_blank"><i
+                            class="fa-brands fa-linkedin fa-2xl" style="color: #0545a2;"></i></a>
+                    <a href="https://twitter.com/gcba" target="_blank"><i class="fa-brands fa-square-twitter fa-2xl"
+                            style="color: #0545a2;"></i></a>
+                </p>
+
+            </div>
+
+            <div class="info-nuestra">
+                <h3>NAVEGACIÓN</h3>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/form.html">Tus datos</a></li>
+                    <li><a href="../pages/consultas.html">FAQ</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="direccion">
+                <h3>CONTÁCTANOS</h3>
+                <ul>
+                    <li>
+                        <span><i class="fa-solid fa-map-pin" style="color: #0545a2;"></i></span>
+                        <span>Gascón 352 - CABA</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-phone" style="color: #0545a2;"></i></i></i></span>
+                        <span>Teléfono: (+54) 11 3343 - 5210</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-envelope" style="color: #0545a2;"></i></i></span>
+                        <span>Correo electrónico: elecciones@elecciones.gob.ar</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBtglfNZtiAto_Ggd8XCl4qZwc51FEGNtY",
+          authDomain: "vot-ar.firebaseapp.com",
+          databaseURL: "https://vot-ar-default-rtdb.firebaseio.com",
+          projectId: "vot-ar",
+          storageBucket: "vot-ar.appspot.com",
+          messagingSenderId: "972450378389",
+          appId: "1:972450378389:web:d503f0c2b6996095c8e19c",
+          measurementId: "G-B3VC7W9XHJ"
+        };
+      
+        // Initialize Firebase
+
+        firebase.initializeApp(firebaseConfig)
+      </script>
+    <script src="../static/js/app.js" type="module"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</body>
+
+</html>
