@@ -102,7 +102,6 @@ export async function mostrarDatos (tipoTabla) {
                 data: {
                   labels: ['Consenso', 'Despertar', 'Frente de Izquierda', 'Juntos por el cambio', 'Todos', 'En blanco'],
                   datasets: [{
-                    label: 'Presidenciales',
                     data: [arrayDatos[0],arrayDatos[1],arrayDatos[3],arrayDatos[4],arrayDatos[5],arrayDatos[2]],
                     backgroundColor: [
                         'rgba(24,70,156,84.6)',
@@ -120,6 +119,11 @@ export async function mostrarDatos (tipoTabla) {
                     y: {
                       beginAtZero: true
                     }
+                  },
+                  plugins: {
+                    legend: {
+                        display: false,
+                      }
                   }
                 }
               });
@@ -157,6 +161,11 @@ export async function mostrarDatos (tipoTabla) {
                     y: {
                       beginAtZero: true
                     }
+                  },
+                  plugins: {
+                    legend: {
+                        display: false,
+                      }
                   }
                 }
               });
@@ -194,6 +203,11 @@ export async function mostrarDatos (tipoTabla) {
                     y: {
                       beginAtZero: true
                     }
+                  },
+                  plugins: {
+                    legend: {
+                        display: false,
+                      }
                   }
                 }
               });
