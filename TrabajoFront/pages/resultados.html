@@ -47,9 +47,12 @@
             </div>
         </section>
 
-        <div id="columnchart_values_presidentes"></div>
-        <div id="columnchart_values_senadores"></div>
-        <div id="columnchart_values_diputados"></div>
+
+        <section class="tablas-resultados">
+            <canvas id="columnchart_values_presidentes"></canvas>
+            <canvas id="columnchart_values_senadores"></canvas>
+            <canvas id="columnchart_values_diputados"></canvas>
+        </section>
 
     </main>
     <!--FOOTER CON FORMULARIO-->
@@ -127,7 +130,7 @@
         firebase.initializeApp(firebaseConfig)
       </script>
     <script src="../static/js/app.js" type="module"></script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 
 </html>

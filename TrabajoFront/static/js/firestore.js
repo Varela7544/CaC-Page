@@ -92,127 +92,116 @@ export async function mostrarDatos (tipoTabla) {
         collection.then((querySnapshot) => {
             const arrayDatos = [];
             querySnapshot.forEach((doc) => {
-                console.log(doc.id, "=>", doc.data().presidenciales)
                 arrayDatos.push(doc.data().presidenciales)
-    
-                google.charts.load("current", {packages:['corechart']});
-                google.charts.setOnLoadCallback(drawChart);
-    
-                function drawChart() {
-                    var data = google.visualization.arrayToDataTable(
-                      [['Presidentes','Votos',{role : 'style'}],
-                        ['Consenso',arrayDatos[0],"#18469c"],
-                        ['Despertar',arrayDatos[1],"#0a5fad"],
-                        ["Frente de Izquierda",arrayDatos[3],"red"],
-                        ["Juntos por el cambio",arrayDatos[4],"yellow"],
-                        ["Frente de todos",arrayDatos[5],"#0099c6"],
-                        ["En blanco",arrayDatos[2],"grey"]]
-                      );
-                
-                    var view = new google.visualization.DataView(data);
-                    view.setColumns([0, 1,
-                                     { calc: "stringify",
-                                       sourceColumn: 1,
-                                       type: "string",
-                                       role: "annotation" },
-                                     2]);
-                
-                    var options = {
-                      title: "Presidentes",
-                      width: 600,
-                      height: 400,
-                      legend: { position: "none" },
-                    };
-                    var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values_presidentes"));
-                    chart.draw(view, options);
-                }
+                console.log(doc.id, "=>", doc.data().presidenciales)
             })
+
+            const ctx = document.getElementById('columnchart_values_presidentes')
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                  labels: ['Consenso', 'Despertar', 'Frente de Izquierda', 'Juntos por el cambio', 'Todos', 'En blanco'],
+                  datasets: [{
+                    label: 'Presidenciales',
+                    data: [arrayDatos[0],arrayDatos[1],arrayDatos[3],arrayDatos[4],arrayDatos[5],arrayDatos[2]],
+                    backgroundColor: [
+                        'rgba(24,70,156,84.6)',
+                        'rgba(10,95,173,94.2)',
+                        'rgba(248,52,52,79.2)',
+                        'rgba(235,238,0,100)',
+                        'rgba(0,153,198,100)',
+                        'grey'
+                    ],
+                    borderWidth: 1
+                  }],
+                },
+                options: {
+                  scales: {
+                    y: {
+                      beginAtZero: true
+                    }
+                  }
+                }
+              });
         });
     }
     else if (tipoTabla == "senadores") {
         collection.then((querySnapshot) => {
             const arrayDatos = [];
             querySnapshot.forEach((doc) => {
-                console.log(doc.id, "=>", doc.data().senadores)
                 arrayDatos.push(doc.data().senadores)
-    
-                google.charts.load("current", {packages:['corechart']});
-                google.charts.setOnLoadCallback(drawChart);
-    
-                function drawChart() {
-                    var data = google.visualization.arrayToDataTable(
-                      [['Senadores','Votos',{role : 'style'}],
-                        ['Consenso',arrayDatos[0],"#18469c"],
-                        ['Despertar',arrayDatos[1],"#0a5fad"],
-                        ["Frente de Izquierda",arrayDatos[3],"red"],
-                        ["Juntos por el cambio",arrayDatos[4],"yellow"],
-                        ["Frente de todos",arrayDatos[5],"#0099c6"],
-                        ["En blanco",arrayDatos[2],"grey"]]
-                      );
-                
-                    var view = new google.visualization.DataView(data);
-                    view.setColumns([0, 1,
-                                     { calc: "stringify",
-                                       sourceColumn: 1,
-                                       type: "string",
-                                       role: "annotation" },
-                                     2]);
-                
-                    var options = {
-                      title: "Senadores",
-                      width: 600,
-                      height: 400,
-                      legend: { position: "none" },
-                    };
-                    var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values_senadores"));
-                    chart.draw(view, options);
-                }
+                console.log(doc.id, "=>", doc.data().senadores)
             })
+
+            const ctx = document.getElementById('columnchart_values_senadores')
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                  labels: ['Consenso', 'Despertar', 'Frente de Izquierda', 'Juntos por el cambio', 'Todos', 'En blanco'],
+                  datasets: [{
+                    label: 'Senadores',
+                    data: [arrayDatos[0],arrayDatos[1],arrayDatos[3],arrayDatos[4],arrayDatos[5],arrayDatos[2]],
+                    backgroundColor: [
+                        'rgba(24,70,156,84.6)',
+                        'rgba(10,95,173,94.2)',
+                        'rgba(248,52,52,79.2)',
+                        'rgba(235,238,0,100)',
+                        'rgba(0,153,198,100)',
+                        'grey'
+                    ],
+                    borderWidth: 1
+                  }],
+                },
+                options: {
+                  scales: {
+                    y: {
+                      beginAtZero: true
+                    }
+                  }
+                }
+              });
         });
     }
     else {
         collection.then((querySnapshot) => {
             const arrayDatos = [];
             querySnapshot.forEach((doc) => {
-                console.log(doc.id, "=>", doc.data().diputados)
                 arrayDatos.push(doc.data().diputados)
-    
-                google.charts.load("current", {packages:['corechart']});
-                google.charts.setOnLoadCallback(drawChart);
-    
-                function drawChart() {
-                    var data = google.visualization.arrayToDataTable(
-                      [['Diputados','Votos',{role : 'style'}],
-                        ['Consenso',arrayDatos[0],"#18469c"],
-                        ['Despertar',arrayDatos[1],"#0a5fad"],
-                        ["Frente de Izquierda",arrayDatos[3],"red"],
-                        ["Juntos por el cambio",arrayDatos[4],"yellow"],
-                        ["Frente de todos",arrayDatos[5],"#0099c6"],
-                        ["En blanco",arrayDatos[2],"grey"]]
-                      );
-                
-                    var view = new google.visualization.DataView(data);
-                    view.setColumns([0, 1,
-                                     { calc: "stringify",
-                                       sourceColumn: 1,
-                                       type: "string",
-                                       role: "annotation" },
-                                     2]);
-                
-                    var options = {
-                      title: "Diputados",
-                      width: 600,
-                      height: 400,
-                      legend: { position: "none" },
-                    };
-                    var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values_diputados"));
-                    chart.draw(view, options);
-                }
+                console.log(doc.id, "=>", doc.data().diputados)
             })
+
+            const ctx = document.getElementById('columnchart_values_diputados')
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                  labels: ['Consenso', 'Despertar', 'Frente de Izquierda', 'Juntos por el cambio', 'Todos', 'En blanco'],
+                  datasets: [{
+                    label: 'Diputados',
+                    data: [arrayDatos[0],arrayDatos[1],arrayDatos[3],arrayDatos[4],arrayDatos[5],arrayDatos[2]],
+                    backgroundColor: [
+                        'rgba(24,70,156,84.6)',
+                        'rgba(10,95,173,94.2)',
+                        'rgba(248,52,52,79.2)',
+                        'rgba(235,238,0,100)',
+                        'rgba(0,153,198,100)',
+                        'grey'
+                    ],
+                    borderWidth: 1
+                  }],
+                },
+                options: {
+                  scales: {
+                    y: {
+                      beginAtZero: true
+                    }
+                  }
+                }
+              });
         });
     }
     
 }
+
   
 
 
