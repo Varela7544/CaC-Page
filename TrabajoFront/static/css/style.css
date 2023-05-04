@@ -18,10 +18,10 @@ nav {
     color: white;
     align-items: center;
     flex-wrap: wrap;
-    
+
 }
 
-.logo-header{
+.logo-header {
     padding-left: 18%;
     margin-left: 2em;
     margin-right: 0.5em;
@@ -45,7 +45,7 @@ nav h3 {
 /*COMIENZO DE ESTILOS DEL MAIN*/
 
 .background-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../img/elecciones-background.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/elecciones-background.jpg');
     background-position: center center;
     background-size: cover;
     padding: 0;
@@ -57,7 +57,7 @@ nav h3 {
 }
 
 .background-section h2 {
-    text-shadow: 0 2px 2px rgba(0,0,0,.5);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
     font-weight: 700;
     line-height: 1.1;
     font-size: 3em;
@@ -67,7 +67,7 @@ nav h3 {
     text-align: center;
     font-size: 1em;
     font-weight: 500;
-    text-shadow: 0 2px 2px rgba(0,0,0,.5);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
 }
 
 @media (max-width:700px) {
@@ -119,12 +119,12 @@ nav h3 {
     font-size: 3rem;
 }
 
-#boton-pre-votacion{
+#boton-pre-votacion {
     margin: 0 auto;
     margin-top: 5rem;
 }
 
-#boton-pre-votacion a{
+#boton-pre-votacion a {
     text-decoration: none;
     padding: 1rem;
     color: white;
@@ -152,7 +152,7 @@ nav h3 {
     flex-direction: row;
 }
 
-.fecha-votaciones > div{
+.fecha-votaciones>div {
     text-align: center;
 }
 
@@ -164,11 +164,13 @@ nav h3 {
     font-size: 5rem;
 }
 
-.card-fecha-1 h4, .card-fecha-2 h4 {
+.card-fecha-1 h4,
+.card-fecha-2 h4 {
     font-size: 1.5rem;
 }
 
-.card-fecha-1 p, .card-fecha-2 p{
+.card-fecha-1 p,
+.card-fecha-2 p {
     font-size: 1rem;
 }
 
@@ -190,6 +192,7 @@ nav h3 {
     .fecha-votaciones {
         flex-direction: column;
     }
+
     .card-fecha-1 {
         margin-right: 0;
         margin-bottom: 3rem;
@@ -214,7 +217,7 @@ nav h3 {
     text-align: center;
 }
 
-.informacion-postulantes{
+.informacion-postulantes {
     margin: 0 auto;
     text-align: center;
 }
@@ -231,7 +234,7 @@ nav h3 {
     justify-items: center;
 }
 
-.cards-postulantes > div {
+.cards-postulantes>div {
     border-radius: 1em;
     padding: 10%;
     font-size: 1.5em;
@@ -240,15 +243,15 @@ nav h3 {
     text-align: center;
 }
 
-.cards-postulantes > div:hover {
-    transform: translate(-30px,-30px);
-    -webkit-transform: translate(-30px,-30px);
-    -moz-transform: translate(-30px,-30px);
+.cards-postulantes>div:hover {
+    transform: translate(-30px, -30px);
+    -webkit-transform: translate(-30px, -30px);
+    -moz-transform: translate(-30px, -30px);
     transition: all 1s;
 }
 
 
-.cards-postulantes a{
+.cards-postulantes a {
     text-decoration: none;
     color: black;
 }
@@ -265,7 +268,7 @@ nav h3 {
 .presidente-4 img,
 .presidente-5 img,
 .presidente-6 img,
-.presidente-7 img{
+.presidente-7 img {
     width: 50%;
     border-radius: 5%;
 }
@@ -290,20 +293,6 @@ footer {
     padding: 1em;
 }
 
-.footer-contacto-logo {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-}
-
-@media (max-width: 700px) {
-    .footer-contacto-logo {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-
 .image-footer {
     text-align: center;
     justify-content: center;
@@ -320,12 +309,24 @@ footer {
 .footer-contacto {
     justify-content: center;
     text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: left;
+    border-radius: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* color de fondo semi-transparente */
+    margin: 0 auto;
 }
 
-#nombre, #mail, #text-area{
+#nombre,
+#mail,
+#text-area {
     width: 18em;
     border-radius: 17px;
-    background: rgba(0,0,0,0.05);
+    background: #37bbed;
     border: none;
     font-size: 17px;
     padding-left: 10px;
@@ -333,8 +334,8 @@ footer {
     padding-bottom: 3px;
 }
 
-.color-placehold::placeholder{
-    color:white;
+.color-placehold::placeholder {
+    color: white;
 }
 
 .footer-sin-form {
@@ -342,25 +343,24 @@ footer {
     margin: 0 auto;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 40px;
 }
 
-.image-footer-sin-form p{
+.image-footer-sin-form p {
     font-size: 1rem;
 }
+
 .image-footer-sin-form h3,
 .info-nuestra h3,
-.direccion h3
-{
+.direccion h3 {
     font-size: 1.5rem;
-    position: relative;      
+    position: relative;
 }
 
 .image-footer-sin-form h3::before,
 .info-nuestra h3::before,
-.direccion h3::before
- {
+.direccion h3::before {
     content: "";
     position: absolute;
     bottom: -5px;
@@ -380,14 +380,13 @@ footer {
 }
 
 .info-nuestra ul,
-.direccion ul
-{
+.direccion ul {
     margin-block-start: 0;
     padding-inline-start: 0px;
 }
+
 .info-nuestra li,
-.direccion li
-{
+.direccion li {
     list-style: none;
     margin-bottom: 0.5rem;
 }
@@ -403,16 +402,18 @@ footer {
     .footer-sin-form {
         grid-template-columns: 2fr;
     }
+
     .info-nuestra {
         margin-left: 0;
     }
-    
+
 }
 
 @media (max-width:900px) {
     .info-nuestra {
         margin-left: 0;
     }
+
     .footer-sin-form {
         width: 90%;
     }
@@ -422,24 +423,24 @@ footer {
 
 /*ESTILOS FAQ*/
 
-#faq{
+#faq {
     text-align: center;
     justify-content: center;
     margin: auto 0 0 0;
-    font-size: 35px;
+    font-size: 30px;
     background-color: white;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
-.background-faq{
+.background-faq {
     /* background-image: url('../img/elecciones-background.jpg'); */
 }
 
 .question-container {
     margin-bottom: 10px;
-  }
-  
-  .question {
+}
+
+.question {
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -453,24 +454,24 @@ footer {
     font-size: 20px;
     background-color: #37bbed;
     flex-direction: column;
-    width: 50%; 
+    width: 50%;
     /* box-shadow: 27px 38px 15px -12px rgba(0,0,0,0.2); */
     border-radius: 15px;
     padding: 1.7%;
     background-position: center;
     background-size: cover;
-    margin:0 auto;
-  }
-  
-  .question i {
+    margin: 0 auto;
+}
+
+.question i {
     transition: transform 0.3s;
-  }
-  
-  .question.active i {
+}
+
+.question.active i {
     transform: rotate(90deg);
-  }
-  
-  .answer {
+}
+
+.answer {
     display: none;
     padding: 1rem;
     background-color: #fff;
@@ -481,11 +482,11 @@ footer {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-  }
-  
-  .answer.show {
+}
+
+.answer.show {
     display: block;
-  }
+}
 
 
 /*FIN DE ESTILOS FAQ*/
@@ -500,7 +501,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 2%;
-    margin-bottom: 3%; 
+    margin-bottom: 3%;
 }
 
 .formulario-datos form {
@@ -509,13 +510,13 @@ footer {
     width: 70%;
     align-items: center;
     justify-content: center;
-    box-shadow: 27px 38px 15px -12px rgba(0,0,0,0.2);
+    box-shadow: 27px 38px 15px -12px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     padding: 10%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../img/elecciones-background.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/elecciones-background.jpg');
     background-position: center center;
     background-size: cover;
-    
+
 }
 
 .formulario-datos input {
@@ -526,22 +527,23 @@ footer {
 }
 
 .input-style {
-    display: flex;  
+    display: flex;
     margin: 10px;
     width: 70%;
     height: 2rem;
     align-items: center;
-    justify-content: center ;
+    justify-content: center;
     background-color: white;
     border-radius: 15px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-    border: none;   
+    border: none;
 }
+
 .formulario-datos input:focus {
     outline-width: 0;
 }
 
-#submit{
+#submit {
     border-radius: 15px;
     margin-top: 30px;
     margin-left: -5px;
@@ -550,13 +552,14 @@ footer {
     width: 70%;
 }
 
-.yaVotasteApagado h4{
+.yaVotasteApagado h4 {
     color: red;
     font-size: 1rem;
     font-weight: 500;
     display: none;
 }
-.yaVotasteEncendido h4{
+
+.yaVotasteEncendido h4 {
     color: red;
     font-size: 1rem;
     font-weight: 500;
@@ -584,18 +587,18 @@ footer {
     .formulario-datos {
         width: 100%;
     }
+
     .input-style,
-    #submit
-     {
+    #submit {
         width: 70%;
     }
 }
 
 
 @media (max-width:420px) {
+
     .input-style,
-    #submit
-     {
+    #submit {
         width: 100%;
     }
 }
@@ -607,8 +610,7 @@ footer {
     margin-bottom: 3%;
     width: 60%;
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 40px 0px;
     text-align: center;
 }
-
