@@ -312,13 +312,15 @@ footer {
     cursor: pointer;
     display: flex;
     align-items: left;
-    border-radius: 1rem;
     font-weight: bold;
-    text-decoration: none;
     padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.5);
     /* color de fondo semi-transparente */
+    background-image: url("../img/Fondocontacto.jpeg");
     margin: 0 auto;
+    border-radius: 40px;
+    padding: 2%;
+    background-size: cover;
+    width: 60%;
 }
 
 #nombre,
@@ -445,6 +447,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     border-radius: 1rem;
     font-weight: bold;
     text-decoration: none;
