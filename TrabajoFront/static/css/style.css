@@ -17,8 +17,8 @@ nav {
     background-color: #37bbed;
     color: white;
     align-items: center;
-    flex-wrap: wrap;
-
+    flex-wrap:nowrap;
+    width: 100%;
 }
 
 .logo-header {
@@ -30,6 +30,14 @@ nav {
 .vot-ar-header {
     font-size: 20px;
 
+}
+
+.logo-gobierno{
+    padding-left: 43%;
+}
+
+.argentina-header{
+    font-size: 20px;
 }
 
 nav h3 {
