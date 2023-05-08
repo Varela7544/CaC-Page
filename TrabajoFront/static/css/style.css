@@ -17,23 +17,22 @@ nav {
     background-color: #37bbed;
     color: white;
     align-items: center;
-    flex-wrap:nowrap;
+    flex-wrap:wrap;
     width: 100%;
 }
 
 .logo-header {
-    padding-left: 18%;
+    padding-left: 23%;
     margin-left: 2em;
     margin-right: 0.5em;
 }
 
 .vot-ar-header {
     font-size: 20px;
-
 }
 
 .logo-gobierno{
-    padding-left: 43%;
+    padding-left: 30%;
 }
 
 .argentina-header{
