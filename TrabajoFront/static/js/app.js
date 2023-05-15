@@ -6,6 +6,7 @@ const nombreCompleto = document.getElementById("nombreCompleto");
 const tipoDocumentacion = document.getElementById("tipoDocumentacion");
 const genero = document.getElementById("genero");
 const yaVotaste = document.querySelector(".yaVotasteApagado");
+const dniIncorrecto = document.querySelector(".dniIncorrecto");
 
 const votacionMacri = document.getElementById("votacionMacri");
 const votacionCristina = document.getElementById("votacionCristina");
@@ -28,6 +29,18 @@ const diputadoTodos = document.getElementById("diputadoTodos");
 const diputadoJuntos = document.getElementById("diputadoJuntos");
 const diputadoBlanco = document.getElementById("diputadoBlanco");
 
+
+function validaDni (dni) {
+    var ex_regular_dni; 
+    ex_regular_dni = /^\d{8}(?:[-\s]\d{4})?$/;
+    if(ex_regular_dni.test (dni) == true){
+       return true
+    }else{
+     return false
+    }
+};
+
+
 // validamos el click en el boton de submit, para enviar los datos a la base de datos y realizar un chequeo de existencia
 if (form) {
     form.addEventListener('submit', e => {
@@ -38,9 +51,23 @@ if (form) {
         const inputValueTipo = tipoDocumentacion.value;
         const inputValueGenero = genero.value;
 
-        if (inputValueDocumento != '' && inputValueNombre != "" && inputValueTipo != "" && inputValueGenero != "")  {
+        let validacionDni = validaDni(inputValueDocumento);
+        console.log(validacionDni)
+
+        if ( validacionDni== true) {
             addValue(inputValueDocumento,inputValueNombre,inputValueTipo, inputValueGenero);
-        };
+        }
+        else {
+            dniIncorrecto.className = "dniIncorrectoActive"
+            documentoInput.value = ""
+            nombreCompleto.value = ""
+            tipoDocumentacion.value = ""
+            genero.value = ""
+            setTimeout(() => {
+                dniIncorrecto.className = "dniIncorrecto"
+              }, 3000);
+
+        }
     });
 }
 

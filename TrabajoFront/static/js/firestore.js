@@ -11,6 +11,9 @@ export async function chequeaSiExiste(inputValue,todo,yaVotaste,valueDocumento,v
             valueNombre.value = ""
             valueTipo.value = ""
             valueGenero.value = ""
+            setTimeout(() => {
+                yaVotaste.className = "yaVotasteApagado"
+              }, 3000);
         }
         else {
             db.collection("usuarios").doc(inputValue).set({
