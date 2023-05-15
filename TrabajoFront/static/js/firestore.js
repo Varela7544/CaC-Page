@@ -59,7 +59,7 @@ export async function votacion (partidoPolitico,tipoVotacion){
                 db.collection("candidatos").doc(partidoPolitico).update({
                     diputados: data
                 }).then(() => {
-                    console.log("Terminaste la votacion")
+                    abrirCandidatos("Final")
                 })
             }
 
@@ -80,6 +80,9 @@ function abrirCandidatos(tipoCandidato) {
     }
     else if(tipoCandidato == "diputados") {
         window.open("candidatosDiputados.html","_self")
+    }
+    else {
+        window.open("resultados.html", "_self")
     }
 };
 

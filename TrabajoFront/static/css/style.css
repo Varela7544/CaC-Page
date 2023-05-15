@@ -35,8 +35,9 @@ nav {
     padding-left: 30%;
 }
 
-.argentina-header{
-    font-size: 20px;
+.argentina-header h3{
+    font-size: 1rem;
+    font-weight: 200;
 }
 
 nav h3 {
@@ -44,6 +45,18 @@ nav h3 {
     font-style: bold;
     font-weight: 800;
 
+}
+
+@media (max-width:740px) {
+    .argentina-header {
+        display: none;
+    }
+}
+
+@media (max-width:460px) {
+    .logo-gobierno {
+        display: none;
+    }
 }
 
 /*FIN DE ESTILOS DEL HEADER*/
@@ -623,4 +636,17 @@ footer {
     grid-template-columns: repeat(1, 1fr);
     gap: 40px 0px;
     text-align: center;
+}
+
+@media (max-width:800px) {
+
+    .tablas-resultados{
+        width: 80%;
+    }
+}
+@media (max-width:500px) {
+
+    .tablas-resultados{
+        width: 100%;
+    }
 }
