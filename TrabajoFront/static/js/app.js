@@ -7,6 +7,7 @@ const tipoDocumentacion = document.getElementById("tipoDocumentacion");
 const genero = document.getElementById("genero");
 const yaVotaste = document.querySelector(".yaVotasteApagado");
 const dniIncorrecto = document.querySelector(".dniIncorrecto");
+const faltanvaloresApagado = document.querySelector(".faltanvaloresApagado")
 
 const votacionMacri = document.getElementById("votacionMacri");
 const votacionCristina = document.getElementById("votacionCristina");
@@ -40,6 +41,15 @@ function validaDni (dni) {
     }
 };
 
+function validaVacio (dni,genero,tramite,nombre) {
+    if (dni || genero || tramite || nombre) {
+        return 1
+    }
+    else {
+        return 0
+    }
+}
+
 
 // validamos el click en el boton de submit, para enviar los datos a la base de datos y realizar un chequeo de existencia
 if (form) {
@@ -51,20 +61,30 @@ if (form) {
         const inputValueTipo = tipoDocumentacion.value;
         const inputValueGenero = genero.value;
 
-        let validacionDni = validaDni(inputValueDocumento);
-        console.log(validacionDni)
-
-        if ( validacionDni== true) {
-            addValue(inputValueDocumento,inputValueNombre,inputValueTipo, inputValueGenero);
+        if (inputValueDocumento && inputValueGenero && inputValueNombre && inputValueTipo) {
+            if ( validaDni(inputValueDocumento) == true) {
+                addValue(inputValueDocumento,inputValueNombre,inputValueTipo, inputValueGenero);
+            }
+            else {
+                dniIncorrecto.className = "dniIncorrectoActive"
+                documentoInput.value = ""
+                nombreCompleto.value = ""
+                tipoDocumentacion.value = ""
+                genero.value = ""
+                setTimeout(() => {
+                    dniIncorrecto.className = "dniIncorrecto"
+                  }, 3000);
+    
+            }
         }
         else {
-            dniIncorrecto.className = "dniIncorrectoActive"
+            faltanvaloresApagado.className = "faltanvalores"
             documentoInput.value = ""
             nombreCompleto.value = ""
             tipoDocumentacion.value = ""
             genero.value = ""
             setTimeout(() => {
-                dniIncorrecto.className = "dniIncorrecto"
+                dniIncorrecto.className = "faltanvaloresApagado"
               }, 3000);
 
         }

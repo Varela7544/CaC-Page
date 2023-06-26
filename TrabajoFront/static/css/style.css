@@ -602,6 +602,19 @@ footer {
     font-weight: 500;
 }
 
+.faltanvaloresApagado h4 {
+    color: red;
+    font-size: 1rem;
+    font-weight: 500;
+    display: none;
+}
+
+.faltanvalores h4 {
+    color: red;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
 
 @media (max-width:1200px) {
     .formulario-datos {
