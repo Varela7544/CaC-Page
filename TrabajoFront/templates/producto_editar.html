@@ -18,26 +18,25 @@
         <div class="container" id="app">
             <form style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
                 <h2>Editar Candidato </h2>
-                <p>Partido:{{stock}}</p>
                 <div class="mb-3">
                     <label for="id">Id</label>
                     <input type="number" name="id" id="id" disabled v-model="id">
                 </div>
                 <div class="mb-3">
                     <label for="nombre">Presidente</label>
-                    <input type="text" name="nombre" id="nombre" v-model="nombre">
+                    <input type="text" name="presidente" id="presidente" v-model="presidente">
                 </div>
                 <div class="mb-3">
                     <label for="precio">Vicepresidente</label>
-                    <input type="number" name="precio" id="precio" v-model="precio">
+                    <input type="text" name="vicepresidente" id="vicepresidente" v-model="vicepresidente">
                 </div>
                 <div class="mb-3">
                     <label for="stock">Partido</label>
-                    <input type="number" name="stock" id="stock" v-model="stock">
+                    <input type="text" name="partido" id="partido" v-model="partido">
                 </div>
                 <div class="mb-3">
                     <label for="imagen">Boleta</label>
-                    <input type="text" name="imagen" id="imagen" v-model="imagen">
+                    <input type="text" name="boleta" id="boleta" v-model="boleta">
                     <img width="100" :src="imagen" alt="">
                 </div>
                 <button type="button" class="btn btn-success" v-on:click="modificar()">Grabar</button>
@@ -56,7 +55,7 @@
         crossorigin="anonymous"> </script>
     <script src="../static/js/database/main.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
-    <script src="../static/js/database/productos.js"></script>
+    <script src="../static/js/database/producto_editar.js"></script>
 </body>
 
 </html>

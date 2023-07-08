@@ -11,7 +11,7 @@ createApp({
             partido: "",
             presidente: "",
             vicepresidente: "",
-            url: 'https://varel4.pythonanywhere.com/presidentes' + id,
+            url: 'https://claracabrera.pythonanywhere.com/presidentes' + id,
         }
     },
     methods: {
@@ -23,9 +23,9 @@ createApp({
                     console.log(data)
                     this.id = data.id
                     this.presidente = data.presidente;
-                    this.boleta = data.boleta
-                    this.partido = data.partido
                     this.vicepresidente = data.vicepresidente
+                    this.boleta = data.boleta
+                    this.partido = data.partido  
                 })
                 .catch(err => {
                     console.error(err);
@@ -33,14 +33,14 @@ createApp({
                 })
         },
         modificar() {
-            let candidato = {
+            let presidente = {
                 presidente: this.presidente,
                 vicepresidente: this.vicepresidente,
                 partido: this.partido,
                 boleta: this.boleta
             }
             var options = {
-                body: JSON.stringify(candidato),
+                body: JSON.stringify(presidente),
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 redirect: 'follow'

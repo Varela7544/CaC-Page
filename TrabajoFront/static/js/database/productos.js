@@ -2,10 +2,10 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            productos: [],
+            presidentes: [],
             //url:'http://localhost:5000/productos',
             // si el backend esta corriendo local usar localhost 5000(si no lo subieron a pythonanywhere)
-            url: 'http://varel4.pythonanywhere.com/presidentes', // si ya lo subieron a pythonanywhere
+            url: 'https://claracabrera.pythonanywhere.com/presidentes', // si ya lo subieron a pythonanywhere
             error: false,
             cargando: true,
             /*atributos para el guardar los valores del formulario */
@@ -29,8 +29,8 @@ createApp({
                     this.error = true
                 })
         },
-        eliminar(presidenteid) {
-            const url = this.url + '/' + presidenteid;
+        eliminar(presidente) {
+            const url = this.url + '/' + presidente;
             var options = {
                 method: 'DELETE',
             }
