@@ -360,6 +360,19 @@ footer {
     color: white;
 }
 
+.color-placehold{
+
+    width: 18em;
+    border-radius: 17px;
+    background: #37bbed;
+    border: none;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+}
+
 .footer-sin-form {
     width: 70%;
     margin: 0 auto;
@@ -678,3 +691,20 @@ footer {
         width: 100%;
     }
 }
+  .altas{
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: left;
+    font-weight: bold;
+    background-color: #37bced2e;
+    margin: 0 auto;
+    border-radius: 40px;
+    padding: 3%;
+    background-size: cover;
+    width: 35%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+

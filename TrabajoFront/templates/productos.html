@@ -5,15 +5,35 @@
     <title>Base de Candidatos a Presidente</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../static/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
 </head>
 
 <body>
-    <header id="header">
-        <!-- place navbar here -->
-    </header>
-    <main>
+    <header>
+        <nav>
+            <div class="logo-header">
+                <a href="../index.html"><img src="../static/img/favicon-32x32.png" alt=""></a>
+            </div>
+            <div class="vot-ar-header">
+                <h3>
+                    VOT.AR
+                </h3>
+            </div>
+            <div class="logo-gobierno"> 
+                <a href="../index.html"><img src="../static/img/escudo_800_900 (2).ico" alt=""></a>
+            </div>
+            <div class="argentina-header">
+                <h3>
+                    Argentina.gob.ar
+                </h3>
+            </div>
+        </nav>
+      </header>
+
+    <main><br><br>
         <div id="app" class="container">
             <h1>Candidatos</h1>
             <br>
@@ -51,7 +71,7 @@
                                     </td>
                                     <td>
                                         <a class="btn btn-primary"
-                                            :href="'./producto_update.html?id='+ presidente.id">Editar</a>
+                                            :href="'./producto_editar.html?id='+ presidente.id">Editar</a>
                                         <button type="button" class="btn btn-danger"
                                             v-on:click="eliminar(presidente.id)">Eliminar</button>
                                     </td>
@@ -62,10 +82,58 @@
                 </section>
             </div>
         </div>
-    </main>
+    </main><br><br>
+
     <footer>
-        <!-- place footer here -->
+        <div class="footer-sin-form">
+            <div class="image-footer-sin-form">
+                <h3>SOBRE NOSOTROS</h3>
+                <p>Somos una compañía dedicada a la solución de problemas mediante software. En este caso,
+                    desarrollamos VOT.AR, que cuenta con las últimas tecnologías para una eficaz votación en toda
+                    nuestra Argentina.</p>
+                <p>
+                    <a href="https://www.facebook.com" target="_blank"><i
+                            class="fa-brands fa-square-facebook fa-2xl" style="color: #0545a2;"></i></a>
+                    <a href="https://www.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires/"
+                        target="_blank"><i class="fa-brands fa-linkedin fa-2xl" style="color: #0545a2;"></i></a>
+                    <a href="https://twitter.com/gcba" target="_blank"><i class="fa-brands fa-square-twitter fa-2xl"
+                            style="color: #0545a2;"></i></a>
+                </p>
+    
+            </div>
+    
+            <div class="info-nuestra">
+                <h3>NAVEGACIÓN</h3>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/form.html">Tus datos</a></li>
+                    <li><a href="../pages/consultas.html">FAQ</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="direccion">
+                <h3>CONTÁCTANOS</h3>
+                <ul>
+                    <li>
+                        <span><i class="fa-solid fa-map-pin" style="color: #0545a2;"></i></span>
+                        <span>Gascón 352 - CABA</span>
+                        <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8531198365336!2d-58.42779415902281!3d-34.60787547306541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca6704b2004b%3A0x2bd62bcc760c2151!2sGasc%C3%B3n%20352%2C%20C1181ACF%20CABA!5e0!3m2!1ses!2sar!4v1685322641114!5m2!1ses!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-phone" style="color: #0545a2;"></i></i></i></span>
+                        <span>Teléfono: (+54) 11 3343 - 5210</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-envelope" style="color: #0545a2;"></i></i></span>
+                        <span>Correo electrónico: elecciones@elecciones.gob.ar</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
+
     <script>
         <!--Link de Bootstrap-->
         src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
