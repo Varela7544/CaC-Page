@@ -65,7 +65,7 @@
         <div class="tpinfo">
             <p>Debe selecciónar al <strong>Senador/a</strong></p>
         </div>
-        <section class="cards-postulantes">
+        <!-- <section class="cards-postulantes">
             <div class="presidente-1">
                 <a id="senadorLibertad">
                     <img src="../static/img/Senadores/Senador-1_UNITE_POR_LA_LIBERTAD_Y_LA_DIGNIDAD.jpg" alt="">
@@ -102,8 +102,18 @@
                     <h4>Voto en Blanco</h4>
                 </a>
             </div>
-        </section>
-           
+        </section> -->
+        <div id="app" class="container">
+            <section class="cards-postulantes">
+                <div v-for="senador in senadores" class="presidente-1">
+                    <a :id="senador.idSenador" @click="votacion(senador.idSenador)">
+                        <img :src="senador.boleta" alt="">
+                        <h4>{{senador.titular}} </h4>
+                    </a>
+                </div>
+
+            </section>
+        </div>
         
     </main>
     <!--FOOTER CON FORMULARIO-->
@@ -180,6 +190,9 @@
 
         firebase.initializeApp(firebaseConfig)
       </script>
+    <script src="../static/js/app.js" type="module"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../static/js/senadores_candidatos.js" type="module"></script>
     <script src="../static/js/app.js" type="module"></script>
 </body>
 
