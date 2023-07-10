@@ -66,7 +66,54 @@
         <div class="tpinfo">
             <p>Debe selecciónar al <strong>Diputado/a</strong></p>
         </div>
-        <section class="cards-postulantes">
+        <div id="app" class="container">
+            <section class="cards-postulantes">
+                <div v-for="diputado in diputados" class="presidente-1">
+                    <a :id="diputado.idDiputados" @click="votacion(diputados.idDiputados)">
+                        <img :src="diputado.boleta" alt="">
+                        <h4>{{diputado.titular}} </h4>
+                    </a>
+                </div>
+                <!-- <div class="presidente-1">
+                    <a id="votacionMacri">
+                        <img src="../static/img/macri_presidente_1.jpg" alt="macri_presidente_1">
+                        <h4>Mauricio Macri | Miguel Angel Picheto</h4>
+                    </a>
+                </div>
+                <div class="presidente-2">
+                    <a id="votacionCristina">
+                        <img src="../static/img/alberto_presidente_2.jpg" alt="Cristiana_presidente">
+                        <h4>Alberto Fernandez | Cristina Fernandez</h4>
+                    </a>
+                </div>
+                <div class="presidente-3">
+                    <a id="votacionRoberto">
+                        <img src="../static/img/lavagna_presidente_3.jpg" alt="roberto_presidente_1">
+                        <h4>Roberto Lavagna | Juan Urtubey</h4>
+                    </a>
+                </div>
+                <div class="presidente-4">
+                    <a id="votacionNicolas">
+                        <img src="../static/img/delcaño_presidente_4.jpg" alt="nicolas_presidente_1">
+                        <h4>Nicolas Del Caño | Romina Del Pla</h4>
+                    </a>
+                </div>
+                <div class="presidente-5">
+                    <a id="votacionJose">
+                        <img src="../static/img/espert_presidente_5.jpg" alt="jose_presidente_1">
+                        <h4>Jose Espert | Luis Rosales</h4>
+                    </a>
+                </div>
+                <div class="presidente-6">
+                    <a id="votacionBlanco">
+                        <img src="../static/img/voto_en_blanco.jpg" alt="en_blanco">
+                        <h4>Voto en Blanco</h4>
+                    </a>
+                </div> -->
+
+            </section>
+        </div>
+        <!-- <section class="cards-postulantes">
             <div class="presidente-1">
                 <a id="diputadoDespertar">
                     <img src="../static/img/Diputados/Diputado-1_UNITE_POR_LA_LIBERTAD_Y_LA_DIGNIDAD.jpg" alt="">
@@ -106,7 +153,7 @@
                     <h4>Voto en Branco</h4>
                 </a>
             </div>
-        </section>
+        </section> -->
 
 
 
@@ -185,6 +232,8 @@
 
         firebase.initializeApp(firebaseConfig)
       </script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../static/js/diputados_candidatos.js" type="module"></script>
     <script src="../static/js/app.js" type="module"></script>
 </body>
 

@@ -54,44 +54,53 @@
             </div>
         </section>
 
-        <section class="cards-postulantes">
-            <div class="presidente-1">
-                <a id="votacionMacri">
-                    <img src="../static/img/macri_presidente_1.jpg" alt="macri_presidente_1">
-                    <h4>Mauricio Macri | Miguel Angel Picheto</h4>
-                </a>
-            </div>
-            <div class="presidente-2">
-                <a id="votacionCristina">
-                    <img src="../static/img/alberto_presidente_2.jpg" alt="Cristiana_presidente">
-                    <h4>Alberto Fernandez | Cristina Fernandez</h4>
-                </a>
-            </div>
-            <div class="presidente-3">
-                <a id="votacionRoberto">
-                    <img src="../static/img/lavagna_presidente_3.jpg" alt="roberto_presidente_1">
-                    <h4>Roberto Lavagna | Juan Urtubey</h4>
-                </a>
-            </div>
-            <div class="presidente-4">
-                <a id="votacionNicolas">
-                    <img src="../static/img/delcaño_presidente_4.jpg" alt="nicolas_presidente_1">
-                    <h4>Nicolas Del Caño | Romina Del Pla</h4>
-                </a>
-            </div>
-            <div class="presidente-5">
-                <a id="votacionJose">
-                    <img src="../static/img/espert_presidente_5.jpg" alt="jose_presidente_1">
-                    <h4>Jose Espert | Luis Rosales</h4>
-                </a>
-            </div>
-            <div class="presidente-6">
-                <a id="votacionBlanco">
-                    <img src="../static/img/voto_en_blanco.jpg" alt="en_blanco">
-                    <h4>Voto en Blanco</h4>
-                </a>
-            </div>
-        </section>
+        <div id="app" class="container">
+            <section class="cards-postulantes">
+                <div v-for="presidente in presidentes" class="presidente-1">
+                    <a :id="presidente.idPresindente" @click="votacion(presidente.idPresindente)">
+                        <img :src="presidente.boleta" alt="">
+                        <h4>{{presidente.presidente}} | {{presidente.vicepresidente}}</h4>
+                    </a>
+                </div>
+                <!-- <div class="presidente-1">
+                    <a id="votacionMacri">
+                        <img src="../static/img/macri_presidente_1.jpg" alt="macri_presidente_1">
+                        <h4>Mauricio Macri | Miguel Angel Picheto</h4>
+                    </a>
+                </div>
+                <div class="presidente-2">
+                    <a id="votacionCristina">
+                        <img src="../static/img/alberto_presidente_2.jpg" alt="Cristiana_presidente">
+                        <h4>Alberto Fernandez | Cristina Fernandez</h4>
+                    </a>
+                </div>
+                <div class="presidente-3">
+                    <a id="votacionRoberto">
+                        <img src="../static/img/lavagna_presidente_3.jpg" alt="roberto_presidente_1">
+                        <h4>Roberto Lavagna | Juan Urtubey</h4>
+                    </a>
+                </div>
+                <div class="presidente-4">
+                    <a id="votacionNicolas">
+                        <img src="../static/img/delcaño_presidente_4.jpg" alt="nicolas_presidente_1">
+                        <h4>Nicolas Del Caño | Romina Del Pla</h4>
+                    </a>
+                </div>
+                <div class="presidente-5">
+                    <a id="votacionJose">
+                        <img src="../static/img/espert_presidente_5.jpg" alt="jose_presidente_1">
+                        <h4>Jose Espert | Luis Rosales</h4>
+                    </a>
+                </div>
+                <div class="presidente-6">
+                    <a id="votacionBlanco">
+                        <img src="../static/img/voto_en_blanco.jpg" alt="en_blanco">
+                        <h4>Voto en Blanco</h4>
+                    </a>
+                </div> -->
+
+            </section>
+        </div>
     </main>
     <!--FOOTER CON FORMULARIO-->
     <footer>
@@ -162,6 +171,8 @@
 
         firebase.initializeApp(firebaseConfig)
       </script>
+      <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../static/js/presidentes_candidatos.js" type="module"></script>
     <script src="../static/js/app.js" type="module"></script>
 </body>
 
