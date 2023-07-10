@@ -24,7 +24,7 @@ const senadorJuntos = document.getElementById("senadorJuntos");
 const senadorBlanco = document.getElementById("senadorBlanco");
 
 const diputadoDespertar = document.getElementById("diputadoDespertar");
-const diputadoConsenso = document.getElementById("diputadoConsenso");
+const diputadoLibertad = document.getElementById("diputadoLibertad");
 const diputadoIzquierda = document.getElementById("diputadoIzquierda");
 const diputadoTodos = document.getElementById("diputadoTodos");
 const diputadoJuntos = document.getElementById("diputadoJuntos");
@@ -204,7 +204,7 @@ if(senadorBlanco) {
 //Votaciones para diputados , validamos que este el link y luego se ejecuta la funcion para enviar los datos
 if(diputadoDespertar) {
     diputadoDespertar.addEventListener('click', () => {
-        console.log("votaste en senadorLibertad");
+        console.log("votaste en diputadoDespertar");
         const partidoPolitico = "Despertar"
         const response = votar(partidoPolitico, "diputados")
     });
@@ -219,20 +219,20 @@ if(diputadoIzquierda) {
 if(diputadoTodos) {
     diputadoTodos.addEventListener('click', () => {
         console.log("votaste en diputadoTodos");
-        const partidoPolitico = "Todos"
+        const partidoPolitico = "Frente de todos"
         const response = votar(partidoPolitico, "diputados")
     });
 };
-if(diputadoConsenso) {
+if(diputadoLibertad) {
     diputadoConsenso.addEventListener('click', () => {
-        console.log("votaste en diputadoConsenso");
-        const partidoPolitico = "Consenso"
+        console.log("votaste en diputadoLibertad");
+        const partidoPolitico = "Autodeterminación y Libertad"
         const response = votar(partidoPolitico, "diputados")
     });
 };
 if(diputadoJuntos) {
     diputadoJuntos.addEventListener('click', () => {
-        console.log("votaste en senadorJuntos");
+        console.log("votaste en diputadoJuntos");
         const partidoPolitico = "Juntos por el cambio"
         const response = votar(partidoPolitico, "diputados")
     });

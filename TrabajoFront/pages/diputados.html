@@ -48,11 +48,12 @@
       <div class="containar-nuevo">
         <a class="btn btn-primary nuevoProduct" href="diputados_nuevo.html">Añadir boleta</a>
       </div>
+      <br>
       <div v-if="error">
         <p>Lo sentimos , ........</p>
       </div>
       <div v-if="errorNoProducts">
-        <p>Lo sentimos no encontramos coincidencias...</p>
+        <p>Lo sentimos, no encontramos coincidencias...</p>
       </div>
       <div v-else>
         <section v-if="cargando" class="cargando">
@@ -66,7 +67,7 @@
                 <tr>
                   <th scope="col">Id</th>
                   <th scope="col">Diputado Titular</th>
-                  <th scope="col">idDiputado</th>
+                  <th scope="col">idDiputados</th>
                   <th scope="col">Partido</th>
                   <th scope="col">Boleta</th>
                 </tr>
@@ -75,7 +76,7 @@
                 <tr class="" v-for="diputado in diputados">
                   <td scope="row">{{diputado.id}}</td>
                   <td>{{diputado.titular}}</td>
-                  <td>{{diputado.idSenador}}</td>
+                  <td>{{diputado.idDiputado}}</td>
                   <td>{{diputado.partido}}</td>
                   <td>
                     <img width="60" :alt="diputado.boleta" />
