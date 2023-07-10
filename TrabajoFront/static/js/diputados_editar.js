@@ -31,14 +31,14 @@ createApp({
         });
     },
     modificar() {
-      let producto = {
+      let candidato = {
         titular: this.titular,
         idDiputados: this.idDiputados,
         partido: this.partido,
         boleta: this.boleta,
       };
       var options = {
-        body: JSON.stringify(producto),
+        body: JSON.stringify(candidato),
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         redirect: "follow",

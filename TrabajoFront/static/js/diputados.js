@@ -36,8 +36,8 @@ createApp({
           this.cargando = false;
         });
     },
-    eliminar(producto) {
-      const url = this.url + "/" + producto;
+    eliminar(candidato) {
+      const url = this.url + "/" + candidato;
       var options = {
         method: "DELETE",
       };
@@ -48,14 +48,14 @@ createApp({
         });
     },
     grabar() {
-      let boleta = {
+      let boletaCandidato = {
         titular: this.titular,
         idDiputados: this.idDiputados,
         partido: this.partido,
         boleta: this.boleta,
       };
       var options = {
-        body: JSON.stringify(boleta),
+        body: JSON.stringify(boletaCandidato),
         method: "POST",
         headers: { "Content-Type": "application/json" },
         redirect: "follow",

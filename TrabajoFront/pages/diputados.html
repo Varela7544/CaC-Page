@@ -1,109 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
-    <script src="https://kit.fontawesome.com/6c5c1fa8c0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.18/r-2.2.2/datatables.min.css"/>
-    <link rel="stylesheet" href="/TrabajoFront/static/css/style.css">
-    <title>Inventario</title>
-  </head>
-  <body>
-    <div id="app" class="container">
-        <header id="header">
-        </header>
-        <main>
-          <h1>Senadores</h1>
-          <br />
-          <div class="containar-nuevo">
-            <a class="btn btn-primary nuevoProduct" href="diputados_nuevo.html">Añadir boleta</a>
-          </div>
-          <div v-if="error">
-            <p>Lo sentimos , ........</p>
-          </div>
-          <div v-if="errorNoProducts">
-            <p>Lo sentimos no encontramos coincidencias...</p>
-          </div>
-          <div v-else>
-            <section v-if="cargando" class="cargando">
-              <div class="spinner-border"></div>
-              <p>Cargando .....</p>
-            </section>
-            <section v-else>
-              <div class="table-responsive display">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">Id</th>
-                      <th scope="col">Diputado Titular</th>
-                      <th scope="col">idDiputado</th>
-                      <th scope="col">Partido</th>
-                      <th scope="col">Boleta</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="" v-for="diputado in diputados">
-                      <td scope="row">{{diputados.id}}</td>
-                      <td>{{diputados.titular}}</td>
-                      <td>{{diputados.idSenador}}</td>
-                      <td>{{diputados.partido}}</td>
-                      <td>
-                        <img
-                          width="60"
-                          :alt="diputado.boleta"
-                        />
-                      </td>
-                      <td style="display:flex;" >
-                        <a
-                        style="margin-right: 10px; border: 1px solid black;"
-                          class="btn"
-                          :href="'diputados_editar.html?id='+ diputado.id"
-                          ><i class="fa-regular fa-pen-to-square" style="color:blue;"></i></a
-                        >
-                        <button
-                          style="margin-right: 10px; border: 1px solid black;"
-                          type="button"
-                          class="btn"
-                          v-on:click="eliminar(diputado.id)"
-                        >
-                        <i class="fa-solid fa-trash-can" style="color:red;"></i>
-                        </button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </section>
-          </div>
-        </main>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/6c5c1fa8c0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.18/r-2.2.2/datatables.min.css" />
+  <link rel="stylesheet" href="/TrabajoFront/static/css/style.css">
+  <title>Inventario</title>
+</head>
+
+<body>
+
+  <header>
+    <nav class="nav-database">
+      <div class="logo-header">
+        <a href="presidentes.html"><img src="../static/img/favicon-32x32.png" alt=""></a>
       </div>
-    <footer>
-      <!-- place footer here -->
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <!--Link de VUE-->
-    <script src="/TrabajoFront/static/js/diputados.js"></script>
-  </body>
+      <div class="vot-ar-header">
+        <h3>
+          VOT.AR Data
+        </h3>
+      </div>
+      <div class="logo-gobierno">
+        <a href="../index.html"><img src="../static/img/escudo_800_900 (2).ico" alt=""></a>
+      </div>
+      <div class="argentina-header">
+        <h3>
+          Argentina.gob.ar
+        </h3>
+      </div>
+    </nav>
+  </header>
+<br><br>
+
+  <div id="app" class="container">
+    <header id="header">
+    </header>
+    <main>
+      <h1>Diputados</h1>
+      <br />
+      <div class="containar-nuevo">
+        <a class="btn btn-primary nuevoProduct" href="diputados_nuevo.html">Añadir boleta</a>
+      </div>
+      <div v-if="error">
+        <p>Lo sentimos , ........</p>
+      </div>
+      <div v-if="errorNoProducts">
+        <p>Lo sentimos no encontramos coincidencias...</p>
+      </div>
+      <div v-else>
+        <section v-if="cargando" class="cargando">
+          <div class="spinner-border"></div>
+          <p>Cargando .....</p>
+        </section>
+        <section v-else>
+          <div class="table-responsive-display">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Id</th>
+                  <th scope="col">Diputado Titular</th>
+                  <th scope="col">idDiputado</th>
+                  <th scope="col">Partido</th>
+                  <th scope="col">Boleta</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="" v-for="diputado in diputados">
+                  <td scope="row">{{diputados.id}}</td>
+                  <td>{{diputados.titular}}</td>
+                  <td>{{diputados.idSenador}}</td>
+                  <td>{{diputados.partido}}</td>
+                  <td>
+                    <img width="60" :alt="diputado.boleta" />
+                  </td>
+                  <td style="display:flex;">
+                    <a style="margin-right: 10px; border: 1px solid black;" class="btn"
+                      :href="'diputados_editar.html?id='+ diputado.id"><i class="fa-regular fa-pen-to-square"
+                        style="color:blue;"></i></a>
+                    <button style="margin-right: 10px; border: 1px solid black;" type="button" class="btn"
+                      v-on:click="eliminar(diputado.id)">
+                      <i class="fa-solid fa-trash-can" style="color:red;"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <footer class="fixed-bottom">
+    <!-- place footer here -->
+      <div id="botones" class="d-flex justify-content-md-center">
+        <a id="botoncircular" href="presidentes.html" class="boton">&#8249;</a>
+        <a id="botoncircular" href="senadores.html" class="boton">&#8250;</a>
+      </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <!--Link de VUE-->
+  <script src="/TrabajoFront/static/js/diputados.js"></script>
+</body>
+
 </html>

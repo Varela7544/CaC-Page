@@ -33,7 +33,7 @@ createApp({
         });
     },
     modificar() {
-      let producto = {
+      let candidato = {
         presidente: this.presidente,
         vicepresidente: this.vicepresidente,
         idPresindente: this.idPresindente,
@@ -41,7 +41,7 @@ createApp({
         boleta: this.boleta,
       };
       var options = {
-        body: JSON.stringify(producto),
+        body: JSON.stringify(candidato),
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         redirect: "follow",

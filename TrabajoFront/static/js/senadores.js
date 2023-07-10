@@ -36,8 +36,8 @@ createApp({
           this.cargando = false;
         });
     },
-    eliminar(producto) {
-      const url = this.url + "/" + producto;
+    eliminar(candidato) {
+      const url = this.url + "/" + candidato;
       var options = {
         method: "DELETE",
       };
