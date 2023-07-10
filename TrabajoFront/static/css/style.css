@@ -373,6 +373,10 @@ footer {
 
 }
 
+.mb-3{
+    margin:0 auto;
+}
+
 .footer-sin-form {
     width: 70%;
     margin: 0 auto;

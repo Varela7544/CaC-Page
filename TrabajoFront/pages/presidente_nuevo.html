@@ -17,39 +17,51 @@
     <link rel="stylesheet" href="/TrabajoFront/static/css/style.css">
 </head>
 <body>
-    <div id="app" class="container">
-        <header id="header">
-        </header>
-        <main>
-          <div class="container" id="app">
-              <form class="alta-producto">
-              <h1>Alta de Boleta</h1>
-              <div class="mb-3">
-              <label for="nombre">Presidente</label>
-              <input type="text" name="nombre" id="nombre" v-model="presidente">
-              </div>
-              <div class="mb-3">
-                  <label for="imagen">Vicepresidente</label>
-                  <input type="text" name="descripcion" id="descripcion" v-model="vicepresidente">
-              </div>
-              <div class="mb-3">
-              <label for="precio">idPresidente</label>
-              <input type="text" name="precio" id="precio" v-model="idPresindente">
-              </div>
-              
-              <div class="mb-3">
-              <label for="stock">Partido</label>
-              <input type="text" name="stock" id="stock" v-model="partido">
-              </div>
-              <div class="mb-3">
-              <label for="imagen">Boleta</label>
-              <input type="text" name="imagen" id="imagen" v-model="boleta">
-              </div>
-              <button type="button" class="btn btn-success"
-              
-              v-on:click="grabar()">Grabar</button>
-              </form>
-              </div>
+  <header>
+    <nav class="nav-database">
+        <div class="logo-header">
+            <a href="../index.html"><img src="../static/img/favicon-32x32.png" alt=""></a>
+        </div>
+        <div class="vot-ar-header">
+            <h3>
+                VOT.AR Data
+            </h3>
+        </div>
+        <div class="logo-gobierno"> 
+            <a href="../index.html"><img src="../static/img/escudo_800_900 (2).ico" alt=""></a>
+        </div>
+        <div class="argentina-header">
+            <h3>
+                Argentina.gob.ar
+            </h3>
+        </div>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="altas" id="app">
+      <form>
+        <h1>Alta de Candidatos a Presidente</h1><br>
+        <p>
+          <input type="text" name="presidente" placeholder="Presidente:" class="color-placehold" v-model="presidente">
+        </p>
+        <p>
+          <input type="text" name="vicepresidente" placeholder="Vicepresidente:" class="color-placehold" v-model="vicepresidente">
+        </p>
+        <p>
+          <input type="text" name="partido" placeholder="Partido:" class="color-placehold" v-model="partido">
+        </p>
+        <p>
+          <input type="text" name="boleta" placeholder="Boleta:" class="color-placehold" v-model="boleta">
+          <img width="100" :src="boleta" alt="">
+        </p>
+
+        <button type="button" class="btn btn-success" id="submit" v-on:click="grabar()">Grabar</button>
+      </form>
+
+
+    </div>
+  </main>
       </main>
       </div>
     <footer>

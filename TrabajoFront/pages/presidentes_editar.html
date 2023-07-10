@@ -17,46 +17,53 @@
     <title>Editar</title>
 </head>
 <body>
-    <header id="header">
-        <!-- place navbar here -->
-        </header>
-        <div id="app" class="container">
-            <header id="header">
-            </header>
-            <main>
-              <form style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
-              <h2>Editar boleta </h2>
-              <div class="mb-3">
-              <label for="id">Id</label>
-              <input type="number" name="id" id="id" disabled v-model="id" >
-              </div>
-              <div class="mb-3">
-              <label for="nombre">Presidente</label>
-              <input type="text" name="nombre" id="nombre" v-model="presidente">
-              </div>
-              <div class="mb-3">
-                  <label for="nombre">Vicepresidente</label>
-                  <input type="text" name="descripcion" id="descripcion" v-model="vicepresidente">
-                  </div>
-              <div class="mb-3">
-              <label for="precio">idPresidente</label>
-              <input type="text" name="precio" id="precio" v-model="idPresindente">
-              </div>
-              <div class="mb-3">
-              <label for="stock">Partido</label>
-              <input type="texrt" name="stock" id="stock" v-model="partido">
-              </div>
-              <div class="mb-3">
-              <label for="imagen">Boleta</label>
-              <input type="text" name="imagen" id="imagen" v-model="boleta">
-              <img width="100" :src="imagen" alt="">
-              </div>
-              <button type="button" class="btn btn-success" v-on:click="modificar()">Grabar</button>
-              </form>
+  <header>
+    <nav class="nav-database">
+        <div class="logo-header">
+            <a href="../index.html"><img src="../static/img/favicon-32x32.png" alt=""></a>
+        </div>
+        <div class="vot-ar-header">
+            <h3>
+                VOT.AR Data
+            </h3>
+        </div>
+        <div class="logo-gobierno"> 
+            <a href="../index.html"><img src="../static/img/escudo_800_900 (2).ico" alt=""></a>
+        </div>
+        <div class="argentina-header">
+            <h3>
+                Argentina.gob.ar
+            </h3>
+        </div>
+    </nav>
+  </header>
+  
+       
+        <main>
+          <div class="altas" id="app">
+              <form>
+                  <h1>Editar Candidato </h1>
+                  <p>Partido:{{stock}}</p>
+                  <p>
+                      <input type="number" name="id" placeholder="id:" class="color-placehold" disabled v-model="id">
+                  </p>
+                  <p>
+                      <input type="text" name="presidente" placeholder="Presidente:" class="color-placehold" v-model="presidente">
+                    </p>
+                    <p>
+                      <input type="text" name="vicepresidente" placeholder="Vicepresidente:" class="color-placehold" v-model="vicepresidente">
+                    </p>
+                    <p>
+                      <input type="text" name="partido" placeholder="Partido:" class="color-placehold" v-model="partido">
+                    </p>
+                    <p>
+                      <input type="text" name="boleta" placeholder="Boleta:" class="color-placehold" v-model="boleta">
+                      <img width="100" :src="boleta" alt="">
+                    </p>
+  
+                  <button type="button" id="submit" class="btn btn-success" v-on:click="modificar()">Grabar</button>
+      </main>
 
-              </main>
-              
-            </div>
         <footer>
         <!-- place footer here -->
         </footer>
